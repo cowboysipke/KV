@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+/* ----------------------------
+  index.html settings
+------------------------------- */
+
+.index p,
+.redirect p {
+    font-size: 13.3333px;
+}
+
+.index p.FM_04_03_ImageIllust_Center_ {
+    margin: 0.2rem 0 0.4rem;
+}
+
+.redirect p.FM_01_03_HL3 {
+    margin-left: 5.669pt;
+    margin-bottom: 10pt;
+    word-spacing: 0.25em;
+    font-weight: bold;
+    font-size: 20.0pt;
+    color: #ffffff;
+    background-color: #243c59;
+    padding-top: 3pt;
+}
+
+.index p.FM_01_06_HL6,
+.redirect p.FM_01_06_HL6 {
+    margin-left: 14.173pt;
+    margin-top: 15pt;
+    margin-bottom: 3pt;
+    word-spacing: 0.25em;
+    font-weight: bold;
+    font-size: 10.0pt;
+    color: #3675f2;
+}
+
+.index p.FM_02_01_Body,
+.redirect p.FM_02_01_Body {
+    margin-left: 14.173pt;
+    word-spacing: 0.25em;
+    font-size: 10.0pt;
+}
+
+.index span.FM_C04_Bold,
+.redirect span.FM_C04_Bold {
+    font-weight: bold;
+    color: #4b5959;
+}
+
+.index span.FM_C05_RefLink,
+.redirect span.FM_C05_RefLink {
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+
+/* ----------------------------
+  contents overwrite settings
+------------------------------- */
+
+p[class^="FM_06_01_SymbolAnchor"],
+p[class^="FM_06_02_SymbolAnchor"] {
+    line-height: 0 !important;
+}
+
+p.FM_02_07_NumList_Free_ span,
+p.FM_09_03_Warranty_NumList span {
+    display: none;
+}
+
+span.FM_C07_StepNumber10_ {
+    margin-left: -0.6rem;
+    padding-right: 0.6rem;
+}
+
+table tr {
+    height: auto !important;
+}
+
+table.T04_NomalTable_WidthFit_TH1 th,
+table.T04_NomalTable_WidthFit_TH1 td {
+    border: solid 1px #000 !important;
+}
+
+table.T04_NomalTable_WidthFit_TH1 th:first-child,
+table.T04_NomalTable_WidthFit_TH1 td:first-child {
+    border-left: none !important;
+}
+
+table.T04_NomalTable_WidthFit_TH1 th:last-child,
+table.T04_NomalTable_WidthFit_TH1 td:last-child {
+    border-right: none !important;
+}
+
+p.FM_04_05_ImageIllust_WidthFit_ img {
+    width: -webkit-fill-available !important;
+}
+
+pre code {
+    tab-size: 2.0em;
+    font-family: monospace !important;
+}
+
+html[lang="zh-cmn-Hans"] pre code *{
+    font-family: monospace !important;
+    font-size: 1.0rem !important;
+}
+
+html[lang="zh-cmn-Hans"] span.FM_C32_ST_Comments {
+    font-family: DFHeiW3-GB !important;
+}
+
+p[class^="FM_04"] > img {
+    width: auto !important;
+    zoom: 160%;
+}
