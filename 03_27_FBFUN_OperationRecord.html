@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>运转记录 | 可编程控制器 KV-X500/X300系列 指令参考手册 | 基恩士</title>
+    <link href="./css\CommandRM_forHTML.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="./css/frame.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="./css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="./js/script.js" defer></script>
+    <script src="./js/search.js" defer></script>
+  </head>
+  <body id="03_27_FBFUN_OperationRecord">
+    <!-- ヘッダー -->
+    <header>
+      <div>
+        <img id="logo" src="./css/img/logo.svg" alt="keyence_logo" />
+        <p>KV-X500/X300系列 指令参考手册</p>
+        <div id="search">
+          <form class="form_search" id="form_search" role="search" aria-expanded="true" action="searchresult.html">
+            <div class="search_control">
+              <input id="input_search" name="search" type="search" placeholder="输入搜索关键词" />
+              <input id="btn_search" title="search" type="submit" value="" />
+            </div>
+          </form>
+        </div><span id="menu_button">
+        </span></div>
+    </header>
+    <div id="main_contents">
+      <div id="menu"><span id="menu_close_button">
+        </span><nav id="toc">
+          <ul>
+            <li><a href="index.html"><span class="series">KV-X500/X300系列</span><span class="users_manual">指令参考手册</span></a></li>
+            <li>
+              <div><span class="toc_button"></span><a href="./00_01_Introduction-1.html">前言</a></div>
+              <ul>
+                <li><a href="./00_01_Introduction-1.html#TOC_相关手册">相关手册</a></li>
+              </ul>
+            </li>
+            <li><a href="./00_01_Introduction-2.html">安全使用注意事项</a></li>
+            <li><a href="./00_01_Introduction-3.html">使用手册的构成</a></li>
+            <li><a href="./00_01_Introduction-4.html">用语和符号</a></li>
+            <li>
+              <div><span class="toc_button"></span><a href="./01_01_Overview-1.html">第1章 指令概述</a></div>
+              <ul>
+                <li><a href="./01_01_Overview-2.html">指令的分类</a></li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./01_01_Overview-3.html">指令说明</a></div>
+                  <ul>
+                    <li><a href="./01_01_Overview-3.html#TOC_指令">指令</a></li>
+                    <li><a href="./01_01_Overview-3.html#TOC_FUN_FB">FUN/FB</a></li>
+                    <li><a href="./01_01_Overview-3.html#TOC_其它注意事项">其它注意事项</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./01_01_Overview-4.html">后缀</a></div>
+                  <ul>
+                    <li><a href="./01_01_Overview-4.html#TOC_后缀的定义">后缀的定义</a></li>
+                    <li><a href="./01_01_Overview-4.html#TOC_数据类型的自动转换">数据类型的自动转换</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./01_01_Overview-5.html">每次扫描执行型和差分执行型</a></div>
+                  <ul>
+                    <li><a href="./01_01_Overview-5.html#TOC_概述">概述</a></li>
+                    <li><a href="./01_01_Overview-5.html#TOC_改为微分执行型">改为微分执行型</a></li>
+                    <li><a href="./01_01_Overview-5.html#TOC_检测执行条件的上升沿_下降沿的条件">检测执行条件的上升沿/下降沿的条件</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./01_01_Overview-6.html">FUN/FB的通用自变量</a></div>
+                  <ul>
+                    <li><a href="./01_01_Overview-6.html#TOC_FUN的通用自变量">FUN的通用自变量</a></li>
+                    <li><a href="./01_01_Overview-6.html#TOC_FB的通用自变量">FB的通用自变量</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./01_01_Overview-7.html">运算错误</a></div>
+                  <ul>
+                    <li><a href="./01_01_Overview-7.html#TOC_运算错误的发生条件">运算错误的发生条件</a></li>
+                    <li><a href="./01_01_Overview-7.html#TOC_发生运算错误时的动作">发生运算错误时的动作</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div><span class="toc_button"></span><a href="./02_00_Instruction.html">第2章 指令</a></div>
+              <ul>
+                <li>
+                  <div><span class="toc_button"></span><a href="./02_01_Instruction_ContactInOut.html">接点输入/输出</a></div>
+                  <ul>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_LD">LD</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_LDB">LDB</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_AND">AND</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_ANB">ANB</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_OR">OR</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_ORB">ORB</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_LDP">LDP</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_ANP">ANP</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_ORP">ORP</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_LDF">LDF</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_ANF">ANF</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_ORF">ORF</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_LDPB">LDPB</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_ANPB">ANPB</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_ORPB">ORPB</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_LDFB">LDFB</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_ANFB">ANFB</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_ORFB">ORFB</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_OUT">OUT</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_OUB">OUB</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_SET">SET</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_RES">RES</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_DIFU">DIFU</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_DIFD">DIFD</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_ONDL">ONDL</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_OFDL">OFDL</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_SHOT">SHOT</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_FLIK">FLIK</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_ALT">ALT</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./02_02_Instruction_BitInOut.html">位输入/输出</a></div>
+                  <ul>
+                    <li><a href="./02_02_Instruction_BitInOut.html#TOC_BLD">BLD</a></li>
+                    <li><a href="./02_02_Instruction_BitInOut.html#TOC_BAND">BAND</a></li>
+                    <li><a href="./02_02_Instruction_BitInOut.html#TOC_BOR">BOR</a></li>
+                    <li><a href="./02_02_Instruction_BitInOut.html#TOC_BLDB">BLDB</a></li>
+                    <li><a href="./02_02_Instruction_BitInOut.html#TOC_BANB">BANB</a></li>
+                    <li><a href="./02_02_Instruction_BitInOut.html#TOC_BORB">BORB</a></li>
+                    <li><a href="./02_02_Instruction_BitInOut.html#TOC_BOUT">BOUT</a></li>
+                    <li><a href="./02_02_Instruction_BitInOut.html#TOC_BOUB">BOUB</a></li>
+                    <li><a href="./02_02_Instruction_BitInOut.html#TOC_BSET">BSET</a></li>
+                    <li><a href="./02_02_Instruction_BitInOut.html#TOC_BRES">BRES</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./02_03_Instruction_Comparison.html">比较</a></div>
+                  <ul>
+                    <li><a href="./02_03_Instruction_Comparison.html#TOC_">- &lt;- &lt; &gt;- &gt; &lt;&gt;</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./02_04_Instruction_TimerCounter.html">定时器 计数器</a></div>
+                  <ul>
+                    <li><a href="./02_04_Instruction_TimerCounter.html#TOC_TMR">TMR</a></li>
+                    <li><a href="./02_04_Instruction_TimerCounter.html#TOC_TMH">TMH</a></li>
+                    <li><a href="./02_04_Instruction_TimerCounter.html#TOC_TMS">TMS</a></li>
+                    <li><a href="./02_04_Instruction_TimerCounter.html#TOC_TMU">TMU</a></li>
+                    <li><a href="./02_04_Instruction_TimerCounter.html#TOC_C">C</a></li>
+                    <li><a href="./02_04_Instruction_TimerCounter.html#TOC_OUTC">OUTC</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./02_05_Instruction_ConnectTerminate.html">连接/结束</a></div>
+                  <ul>
+                    <li><a href="./02_05_Instruction_ConnectTerminate.html#TOC_END">END</a></li>
+                    <li><a href="./02_05_Instruction_ConnectTerminate.html#TOC_ENDH">ENDH</a></li>
+                    <li><a href="./02_05_Instruction_ConnectTerminate.html#TOC_CON">CON</a></li>
+                    <li><a href="./02_05_Instruction_ConnectTerminate.html#TOC_MPS">MPS</a></li>
+                    <li><a href="./02_05_Instruction_ConnectTerminate.html#TOC_MRD">MRD</a></li>
+                    <li><a href="./02_05_Instruction_ConnectTerminate.html#TOC_MPP">MPP</a></li>
+                    <li><a href="./02_05_Instruction_ConnectTerminate.html#TOC_ANL">ANL</a></li>
+                    <li><a href="./02_05_Instruction_ConnectTerminate.html#TOC_ORL">ORL</a></li>
+                    <li><a href="./02_05_Instruction_ConnectTerminate.html#TOC_INV">INV</a></li>
+                    <li><a href="./02_05_Instruction_ConnectTerminate.html#TOC_MEP">MEP</a></li>
+                    <li><a href="./02_05_Instruction_ConnectTerminate.html#TOC_MEF">MEF</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./02_06_Instruction_Arithmetic.html">算术</a></div>
+                  <ul>
+                    <li><a href="./02_06_Instruction_Arithmetic.html#TOC_CAL">CAL+</a></li>
+                    <li><a href="./02_06_Instruction_Arithmetic.html#TOC_CAL1">CAL-</a></li>
+                    <li><a href="./02_06_Instruction_Arithmetic.html#TOC_CAL2">CAL*</a></li>
+                    <li><a href="./02_06_Instruction_Arithmetic.html#TOC_CAL3">CAL/</a></li>
+                    <li><a href="./02_06_Instruction_Arithmetic.html#TOC_CAL4">CAL&amp;</a></li>
+                    <li><a href="./02_06_Instruction_Arithmetic.html#TOC_CAL5">CAL|</a></li>
+                    <li><a href="./02_06_Instruction_Arithmetic.html#TOC_CAL6">CAL^</a></li>
+                    <li><a href="./02_06_Instruction_Arithmetic.html#TOC_CAL7">CAL˜</a></li>
+                    <li><a href="./02_06_Instruction_Arithmetic.html#TOC_CAL8">CAL&gt;&gt;</a></li>
+                    <li><a href="./02_06_Instruction_Arithmetic.html#TOC_CAL9">CAL&lt;&lt;</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./02_07_Instruction_DataTransfer.html">数据传输</a></div>
+                  <ul>
+                    <li><a href="./02_07_Instruction_DataTransfer.html#TOC_MOV">MOV</a></li>
+                    <li><a href="./02_07_Instruction_DataTransfer.html#TOC_DW">DW</a></li>
+                    <li><a href="./02_07_Instruction_DataTransfer.html#TOC_BMOV">BMOV</a></li>
+                    <li><a href="./02_07_Instruction_DataTransfer.html#TOC_FMOV">FMOV</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./02_08_Instruction_DateAndTime.html">时间_日期时刻</a></div>
+                  <ul>
+                    <li><a href="./02_08_Instruction_DateAndTime.html#TOC_LDWK">LDWK</a></li>
+                    <li><a href="./02_08_Instruction_DateAndTime.html#TOC_ANDWK">ANDWK</a></li>
+                    <li><a href="./02_08_Instruction_DateAndTime.html#TOC_ORWK">ORWK</a></li>
+                    <li><a href="./02_08_Instruction_DateAndTime.html#TOC_LDWKB">LDWKB</a></li>
+                    <li><a href="./02_08_Instruction_DateAndTime.html#TOC_ANDWKB">ANDWKB</a></li>
+                    <li><a href="./02_08_Instruction_DateAndTime.html#TOC_ORWKB">ORWKB</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./02_09_Instruction_BufferMemory.html">缓冲存储器</a></div>
+                  <ul>
+                    <li><a href="./02_09_Instruction_BufferMemory.html#TOC_UREAD">UREAD</a></li>
+                    <li><a href="./02_09_Instruction_BufferMemory.html#TOC_UWRIT">UWRIT</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./02_10_Instruction_Flow.html">流程</a></div>
+                  <ul>
+                    <li><a href="./02_10_Instruction_Flow.html#TOC_MC">MC</a></li>
+                    <li><a href="./02_10_Instruction_Flow.html#TOC_MCR">MCR</a></li>
+                    <li><a href="./02_10_Instruction_Flow.html#TOC_CALL">CALL</a></li>
+                    <li><a href="./02_10_Instruction_Flow.html#TOC_SBN">SBN</a></li>
+                    <li><a href="./02_10_Instruction_Flow.html#TOC_RET">RET</a></li>
+                    <li><a href="./02_10_Instruction_Flow.html#TOC_FOR">FOR</a></li>
+                    <li><a href="./02_10_Instruction_Flow.html#TOC_NEXT">NEXT</a></li>
+                    <li><a href="./02_10_Instruction_Flow.html#TOC_BREAK">BREAK</a></li>
+                    <li><a href="./02_10_Instruction_Flow.html#TOC_CJ">CJ</a></li>
+                    <li><a href="./02_10_Instruction_Flow.html#TOC_NCJ">NCJ</a></li>
+                    <li><a href="./02_10_Instruction_Flow.html#TOC_GOTO">GOTO</a></li>
+                    <li><a href="./02_10_Instruction_Flow.html#TOC_LABEL">LABEL</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./02_11_Instruction_Sensor.html">传感器</a></div>
+                  <ul>
+                    <li><a href="./02_11_Instruction_Sensor.html#TOC_SPRD">SPRD</a></li>
+                    <li><a href="./02_11_Instruction_Sensor.html#TOC_SPWR">SPWR</a></li>
+                    <li><a href="./02_11_Instruction_Sensor.html#TOC_SSVC">SSVC</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./02_12_FunctionBlock.html">功能块</a></div>
+                  <ul>
+                    <li><a href="./02_12_FunctionBlock.html#TOC_FUN">FUN</a></li>
+                    <li><a href="./02_12_FunctionBlock.html#TOC_FBCALL">FBCALL</a></li>
+                    <li><a href="./02_12_FunctionBlock.html#TOC_FBEXEC">FBEXEC</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div><span class="toc_button"></span><a href="./03_00_FBFUN.html">第3章 FUN/FB</a></div>
+              <ul>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_01_FBFUN_ContactInOut.html">接点输入/输出</a></div>
+                  <ul>
+                    <li><a href="./03_01_FBFUN_ContactInOut.html#TOC_R_TRIG">R_TRIG</a></li>
+                    <li><a href="./03_01_FBFUN_ContactInOut.html#TOC_F_TRIG">F_TRIG</a></li>
+                    <li><a href="./03_01_FBFUN_ContactInOut.html#TOC_SR">SR</a></li>
+                    <li><a href="./03_01_FBFUN_ContactInOut.html#TOC_RS">RS</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_02_FBFUN_BitInOut.html">位输入/输出</a></div>
+                  <ul>
+                    <li><a href="./03_02_FBFUN_BitInOut.html#TOC_BitLoad">BitLoad</a></li>
+                    <li><a href="./03_02_FBFUN_BitInOut.html#TOC_BitSet">BitSet</a></li>
+                    <li><a href="./03_02_FBFUN_BitInOut.html#TOC_BitReset">BitReset</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_03_FBFUN_Comparison.html">比较</a></div>
+                  <ul>
+                    <li><a href="./03_03_FBFUN_Comparison.html#TOC_LT">LT</a></li>
+                    <li><a href="./03_03_FBFUN_Comparison.html#TOC_LE">LE</a></li>
+                    <li><a href="./03_03_FBFUN_Comparison.html#TOC_GT">GT</a></li>
+                    <li><a href="./03_03_FBFUN_Comparison.html#TOC_GE">GE</a></li>
+                    <li><a href="./03_03_FBFUN_Comparison.html#TOC_EQ">EQ</a></li>
+                    <li><a href="./03_03_FBFUN_Comparison.html#TOC_NE">NE</a></li>
+                    <li><a href="./03_03_FBFUN_Comparison.html#TOC_ZoneCmp">ZoneCmp</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_04_FBFUN_TimerCounter.html">定时器 计数器</a></div>
+                  <ul>
+                    <li><a href="./03_04_FBFUN_TimerCounter.html#TOC_TON">TON</a></li>
+                    <li><a href="./03_04_FBFUN_TimerCounter.html#TOC_TOF">TOF</a></li>
+                    <li><a href="./03_04_FBFUN_TimerCounter.html#TOC_TP">TP</a></li>
+                    <li><a href="./03_04_FBFUN_TimerCounter.html#TOC_UpDownTimer">UpDownTimer</a></li>
+                    <li><a href="./03_04_FBFUN_TimerCounter.html#TOC_CTU">CTU</a></li>
+                    <li><a href="./03_04_FBFUN_TimerCounter.html#TOC_CTU_DINT">CTU_DINT</a></li>
+                    <li><a href="./03_04_FBFUN_TimerCounter.html#TOC_CTU_UDINT">CTU_UDINT</a></li>
+                    <li><a href="./03_04_FBFUN_TimerCounter.html#TOC_CTD">CTD</a></li>
+                    <li><a href="./03_04_FBFUN_TimerCounter.html#TOC_CTD_DINT">CTD_DINT</a></li>
+                    <li><a href="./03_04_FBFUN_TimerCounter.html#TOC_CTD_UDINT">CTD_UDINT</a></li>
+                    <li><a href="./03_04_FBFUN_TimerCounter.html#TOC_CTUD">CTUD</a></li>
+                    <li><a href="./03_04_FBFUN_TimerCounter.html#TOC_CTUD_DINT">CTUD_DINT</a></li>
+                    <li><a href="./03_04_FBFUN_TimerCounter.html#TOC_CTUD_UDINT">CTUD_UDINT</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_05_FBFUN_Shift.html">移位</a></div>
+                  <ul>
+                    <li><a href="./03_05_FBFUN_Shift.html#TOC_SHL">SHL</a></li>
+                    <li><a href="./03_05_FBFUN_Shift.html#TOC_SHR">SHR</a></li>
+                    <li><a href="./03_05_FBFUN_Shift.html#TOC_ROL">ROL</a></li>
+                    <li><a href="./03_05_FBFUN_Shift.html#TOC_ROR">ROR</a></li>
+                    <li><a href="./03_05_FBFUN_Shift.html#TOC_AryShiftL">AryShiftL</a></li>
+                    <li><a href="./03_05_FBFUN_Shift.html#TOC_AryShiftR">AryShiftR</a></li>
+                    <li><a href="./03_05_FBFUN_Shift.html#TOC_ShiftRegister">ShiftRegister</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_06_FBFUN_LogicalOperation.html">逻辑运算</a></div>
+                  <ul>
+                    <li><a href="./03_06_FBFUN_LogicalOperation.html#TOC_NOT">NOT</a></li>
+                    <li><a href="./03_06_FBFUN_LogicalOperation.html#TOC_AND1">AND</a></li>
+                    <li><a href="./03_06_FBFUN_LogicalOperation.html#TOC_OR1">OR</a></li>
+                    <li><a href="./03_06_FBFUN_LogicalOperation.html#TOC_XOR">XOR</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_07_FBFUN_Arithmetic.html">算术</a></div>
+                  <ul>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_ADD">ADD</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_SUB">SUB</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_MUL">MUL</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_DIV">DIV</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_MOD">MOD</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_EXP">EXP</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_EXPT">EXPT</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_SQRT">SQRT</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_LN">LN</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_LOG">LOG</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_SIN">SIN</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_COS">COS</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_TAN">TAN</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_ASIN">ASIN</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_ACOS">ACOS</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_ATAN">ATAN</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_ATAN2">ATAN2</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_ABS">ABS</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_DegToRad">DegToRad</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_RadToDeg">RadToDeg</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_Inc">Inc</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_Dec">Dec</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_08_FBFUN_Selection.html">选择</a></div>
+                  <ul>
+                    <li><a href="./03_08_FBFUN_Selection.html#TOC_SEL">SEL</a></li>
+                    <li><a href="./03_08_FBFUN_Selection.html#TOC_MUX">MUX</a></li>
+                    <li><a href="./03_08_FBFUN_Selection.html#TOC_MAX">MAX</a></li>
+                    <li><a href="./03_08_FBFUN_Selection.html#TOC_MIN">MIN</a></li>
+                    <li><a href="./03_08_FBFUN_Selection.html#TOC_LIMIT">LIMIT</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_09_FBFUN_DataProcessing.html">数据处理</a></div>
+                  <ul>
+                    <li><a href="./03_09_FBFUN_DataProcessing.html#TOC_AryReset">AryReset</a></li>
+                    <li><a href="./03_09_FBFUN_DataProcessing.html#TOC_BitCount">BitCount</a></li>
+                    <li><a href="./03_09_FBFUN_DataProcessing.html#TOC_DataSearch">DataSearch</a></li>
+                    <li><a href="./03_09_FBFUN_DataProcessing.html#TOC_AryMax">AryMax</a></li>
+                    <li><a href="./03_09_FBFUN_DataProcessing.html#TOC_AryMin">AryMin</a></li>
+                    <li><a href="./03_09_FBFUN_DataProcessing.html#TOC_AryMean">AryMean</a></li>
+                    <li><a href="./03_09_FBFUN_DataProcessing.html#TOC_ArySum">ArySum</a></li>
+                    <li><a href="./03_09_FBFUN_DataProcessing.html#TOC_ByteSum">ByteSum</a></li>
+                    <li><a href="./03_09_FBFUN_DataProcessing.html#TOC_AryCRC">AryCRC</a></li>
+                    <li><a href="./03_09_FBFUN_DataProcessing.html#TOC_StructSort">StructSort</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_10_FBFUN_DataTransfer.html">数据传输</a></div>
+                  <ul>
+                    <li><a href="./03_10_FBFUN_DataTransfer.html#TOC_MOVE">MOVE</a></li>
+                    <li><a href="./03_10_FBFUN_DataTransfer.html#TOC_FillMove">FillMove</a></li>
+                    <li><a href="./03_10_FBFUN_DataTransfer.html#TOC_BlockMove">BlockMove</a></li>
+                    <li><a href="./03_10_FBFUN_DataTransfer.html#TOC_ByteBlockMove">ByteBlockMove</a></li>
+                    <li><a href="./03_10_FBFUN_DataTransfer.html#TOC_BitBlockMove">BitBlockMove</a></li>
+                    <li><a href="./03_10_FBFUN_DataTransfer.html#TOC_PartialMove">PartialMove</a></li>
+                    <li><a href="./03_10_FBFUN_DataTransfer.html#TOC_StructReset">StructReset</a></li>
+                    <li><a href="./03_10_FBFUN_DataTransfer.html#TOC_Exchange">Exchange</a></li>
+                    <li><a href="./03_10_FBFUN_DataTransfer.html#TOC_Clear">Clear</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_11_FBFUN_GetSize.html">获取大小</a></div>
+                  <ul>
+                    <li><a href="./03_11_FBFUN_GetSize.html#TOC_GetAryCount">GetAryCount</a></li>
+                    <li><a href="./03_11_FBFUN_GetSize.html#TOC_GetWordSize">GetWordSize</a></li>
+                    <li><a href="./03_11_FBFUN_GetSize.html#TOC_GetByteSize">GetByteSize</a></li>
+                    <li><a href="./03_11_FBFUN_GetSize.html#TOC_GetBitSize">GetBitSize</a></li>
+                    <li><a href="./03_11_FBFUN_GetSize.html#TOC_LOWER_BOUND">LOWER_BOUND</a></li>
+                    <li><a href="./03_11_FBFUN_GetSize.html#TOC_UPPER_BOUND">UPPER_BOUND</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_12_FBFUN_DataConversion.html">数据转换</a></div>
+                  <ul>
+                    <li><a href="./03_12_FBFUN_DataConversion.html#TOC_Decode">Decode</a></li>
+                    <li><a href="./03_12_FBFUN_DataConversion.html#TOC_Encode">Encode</a></li>
+                    <li><a href="./03_12_FBFUN_DataConversion.html#TOC_BinToGrayCode">BinToGrayCode</a></li>
+                    <li><a href="./03_12_FBFUN_DataConversion.html#TOC_GrayCodeToBin">GrayCodeToBin</a></li>
+                    <li><a href="./03_12_FBFUN_DataConversion.html#TOC_DisperseNibble">DisperseNibble</a></li>
+                    <li><a href="./03_12_FBFUN_DataConversion.html#TOC_UniteNibble">UniteNibble</a></li>
+                    <li><a href="./03_12_FBFUN_DataConversion.html#TOC_DisperseByte">DisperseByte</a></li>
+                    <li><a href="./03_12_FBFUN_DataConversion.html#TOC_UniteByte">UniteByte</a></li>
+                    <li><a href="./03_12_FBFUN_DataConversion.html#TOC_BlockSwap">BlockSwap</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_13_FBFUN_DataControl.html">数据控制</a></div>
+                  <ul>
+                    <li><a href="./03_13_FBFUN_DataControl.html#TOC_ApproxCal">ApproxCal</a></li>
+                    <li><a href="./03_13_FBFUN_DataControl.html#TOC_Ramp">Ramp</a></li>
+                    <li><a href="./03_13_FBFUN_DataControl.html#TOC_TimeProportionalOut">TimeProportionalOut</a></li>
+                    <li><a href="./03_13_FBFUN_DataControl.html#TOC_LeadLagFilter">LeadLagFilter</a></li>
+                    <li><a href="./03_13_FBFUN_DataControl.html#TOC_PID">PID</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_14_FBFUN_Table.html">表</a></div>
+                  <ul>
+                    <li><a href="./03_14_FBFUN_Table.html#TOC_FIFOWrite">FIFOWrite</a></li>
+                    <li><a href="./03_14_FBFUN_Table.html#TOC_FIFORead">FIFORead</a></li>
+                    <li><a href="./03_14_FBFUN_Table.html#TOC_FIFOInsert">FIFOInsert</a></li>
+                    <li><a href="./03_14_FBFUN_Table.html#TOC_FIFODelete">FIFODelete</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_15_FBFUN_CharacterConversion.html">字符转换</a></div>
+                  <ul>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_BinaryToAscii">BinaryToAscii</a></li>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_AsciiToBinary">AsciiToBinary</a></li>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_AsciiToString">AsciiToString</a></li>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_NumToDecString">NumToDecString</a></li>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_DecStringToNum">DecStringToNum</a></li>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_NumToHexString">NumToHexString</a></li>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_HexStringToNum">HexStringToNum</a></li>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_RealToString">RealToString</a></li>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_StringToReal">StringToReal</a></li>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_LrealToString">LrealToString</a></li>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_StringToLreal">StringToLreal</a></li>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_VariableToString">VariableToString</a></li>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_StringToVariable">StringToVariable</a></li>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_CipStringToString">CipStringToString</a></li>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_StringToCipString">StringToCipString</a></li>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_UTF16CodeToString">UTF16CodeToString</a></li>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_StringToUTF16Code">StringToUTF16Code</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_16_FBFUN_CharacterProcessing.html">字符处理</a></div>
+                  <ul>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_LEN">LEN</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_LEFT">LEFT</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_RIGHT">RIGHT</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_MID">MID</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_CONCAT">CONCAT</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_INSERT">INSERT</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_DELETE">DELETE</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_REPLACE">REPLACE</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_FIND">FIND</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_StringSearch">StringSearch</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_StringCmp">StringCmp</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_StringMove">StringMove</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_TrimL">TrimL</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_TrimR">TrimR</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_Trim">Trim</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_DisperseString">DisperseString</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_UniteString">UniteString</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_SplitN">SplitN</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_17_FBFUN_DateAndTime.html">时间/日期时刻处理</a></div>
+                  <ul>
+                    <li><a href="./03_17_FBFUN_DateAndTime.html#TOC_WriteCalendarTime">WriteCalendarTime</a></li>
+                    <li><a href="./03_17_FBFUN_DateAndTime.html#TOC_DtToSec">DtToSec</a></li>
+                    <li><a href="./03_17_FBFUN_DateAndTime.html#TOC_SecToDt">SecToDt</a></li>
+                    <li><a href="./03_17_FBFUN_DateAndTime.html#TOC_ADD_TIME">ADD_TIME</a></li>
+                    <li><a href="./03_17_FBFUN_DateAndTime.html#TOC_SUB_TIME">SUB_TIME</a></li>
+                    <li><a href="./03_17_FBFUN_DateAndTime.html#TOC_MUL_TIME">MUL_TIME</a></li>
+                    <li><a href="./03_17_FBFUN_DateAndTime.html#TOC_DIV_TIME">DIV_TIME</a></li>
+                    <li><a href="./03_17_FBFUN_DateAndTime.html#TOC_GetDayOfWeek">GetDayOfWeek</a></li>
+                    <li><a href="./03_17_FBFUN_DateAndTime.html#TOC_TimeToMicroSec">TimeToMicroSec</a></li>
+                    <li><a href="./03_17_FBFUN_DateAndTime.html#TOC_TimeToMilliSec">TimeToMilliSec</a></li>
+                    <li><a href="./03_17_FBFUN_DateAndTime.html#TOC_TimeToSec">TimeToSec</a></li>
+                    <li><a href="./03_17_FBFUN_DateAndTime.html#TOC_MicroSecToTime">MicroSecToTime</a></li>
+                    <li><a href="./03_17_FBFUN_DateAndTime.html#TOC_MilliSecToTime">MilliSecToTime</a></li>
+                    <li><a href="./03_17_FBFUN_DateAndTime.html#TOC_SecToTime">SecToTime</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_18_FBFUN_DataTypeConversion.html">数据类型转换</a></div>
+                  <ul>
+                    <li><a href="./03_18_FBFUN_DataTypeConversion.html#TOC__TO">*_TO_**</a></li>
+                    <li><a href="./03_18_FBFUN_DataTypeConversion.html#TOC_TO">TO_**</a></li>
+                    <li><a href="./03_18_FBFUN_DataTypeConversion.html#TOC_TRUNC">TRUNC_**</a></li>
+                    <li><a href="./03_18_FBFUN_DataTypeConversion.html#TOC_TO_BCD">TO_BCD_**</a></li>
+                    <li><a href="./03_18_FBFUN_DataTypeConversion.html#TOC_BCD_TO">BCD_TO_**</a></li>
+                    <li><a href="./03_18_FBFUN_DataTypeConversion.html#TOC_IS_VALID">IS_VALID</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_19_FBFUN_Storage.html">存储</a></div>
+                  <ul>
+                    <li><a href="./03_19_FBFUN_Storage.html#TOC_StorageWriteBin">StorageWriteBin</a></li>
+                    <li><a href="./03_19_FBFUN_Storage.html#TOC_StorageReadBin">StorageReadBin</a></li>
+                    <li><a href="./03_19_FBFUN_Storage.html#TOC_StorageReadLine">StorageReadLine</a></li>
+                    <li><a href="./03_19_FBFUN_Storage.html#TOC_StoragePrint">StoragePrint</a></li>
+                    <li><a href="./03_19_FBFUN_Storage.html#TOC_StorageDeleteFile">StorageDeleteFile</a></li>
+                    <li><a href="./03_19_FBFUN_Storage.html#TOC_StorageMakeDir">StorageMakeDir</a></li>
+                    <li><a href="./03_19_FBFUN_Storage.html#TOC_StorageRemoveDir">StorageRemoveDir</a></li>
+                    <li><a href="./03_19_FBFUN_Storage.html#TOC_StorageCopy">StorageCopy</a></li>
+                    <li><a href="./03_19_FBFUN_Storage.html#TOC_StorageMove">StorageMove</a></li>
+                    <li><a href="./03_19_FBFUN_Storage.html#TOC_StorageRename">StorageRename</a></li>
+                    <li><a href="./03_19_FBFUN_Storage.html#TOC_StorageGetCapacity">StorageGetCapacity</a></li>
+                    <li><a href="./03_19_FBFUN_Storage.html#TOC_StorageGetStatus">StorageGetStatus</a></li>
+                    <li><a href="./03_19_FBFUN_Storage.html#TOC_StorageGetFileList">StorageGetFileList</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_20_FBFUN_SocketCommunication.html">套接字通信</a></div>
+                  <ul>
+                    <li><a href="./03_20_FBFUN_SocketCommunication.html#TOC_SocketTCP_ActiveOpen">SocketTCP_ActiveOpen</a></li>
+                    <li><a href="./03_20_FBFUN_SocketCommunication.html#TOC_SocketTCP_PassiveOpen">SocketTCP_PassiveOpen</a></li>
+                    <li><a href="./03_20_FBFUN_SocketCommunication.html#TOC_SocketTCP_Send">SocketTCP_Send</a></li>
+                    <li><a href="./03_20_FBFUN_SocketCommunication.html#TOC_SocketTCP_Recv">SocketTCP_Recv</a></li>
+                    <li><a href="./03_20_FBFUN_SocketCommunication.html#TOC_SocketTCP_RecvDelimiter">SocketTCP_RecvDelimiter</a></li>
+                    <li><a href="./03_20_FBFUN_SocketCommunication.html#TOC_SocketUDP_Open">SocketUDP_Open</a></li>
+                    <li><a href="./03_20_FBFUN_SocketCommunication.html#TOC_SocketUDP_Send">SocketUDP_Send</a></li>
+                    <li><a href="./03_20_FBFUN_SocketCommunication.html#TOC_SocketUDP_Recv">SocketUDP_Recv</a></li>
+                    <li><a href="./03_20_FBFUN_SocketCommunication.html#TOC_SocketClearRecvBuf">SocketClearRecvBuf</a></li>
+                    <li><a href="./03_20_FBFUN_SocketCommunication.html#TOC_SocketClose">SocketClose</a></li>
+                    <li><a href="./03_20_FBFUN_SocketCommunication.html#TOC_Ping">Ping</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_21_FBFUN_BufferMemory.html">缓冲存储器</a></div>
+                  <ul>
+                    <li><a href="./03_21_FBFUN_BufferMemory.html#TOC_UnitBufMemBlockRead">UnitBufMemBlockRead</a></li>
+                    <li><a href="./03_21_FBFUN_BufferMemory.html#TOC_UnitBufMemBlockWrite">UnitBufMemBlockWrite</a></li>
+                    <li><a href="./03_21_FBFUN_BufferMemory.html#TOC_UnitBufMemFill">UnitBufMemFill</a></li>
+                    <li><a href="./03_21_FBFUN_BufferMemory.html#TOC_UnitBufMemRead">UnitBufMemRead</a></li>
+                    <li><a href="./03_21_FBFUN_BufferMemory.html#TOC_UnitBufMemWrite">UnitBufMemWrite</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_22_FBFUN_Refresh.html">刷新</a></div>
+                  <ul>
+                    <li><a href="./03_22_FBFUN_Refresh.html#TOC_RefreshFreerunCounter">RefreshFreerunCounter</a></li>
+                    <li><a href="./03_22_FBFUN_Refresh.html#TOC_RefreshX">RefreshX</a></li>
+                    <li><a href="./03_22_FBFUN_Refresh.html#TOC_RefreshY">RefreshY</a></li>
+                    <li><a href="./03_22_FBFUN_Refresh.html#TOC_RefreshCyclicInput">RefreshCyclicInput</a></li>
+                    <li><a href="./03_22_FBFUN_Refresh.html#TOC_RefreshCyclicOutput">RefreshCyclicOutput</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_23_FBFUN_ModuleExecution.html">执行模块</a></div>
+                  <ul>
+                    <li><a href="./03_23_FBFUN_ModuleExecution.html#TOC_ModuleStart">ModuleStart</a></li>
+                    <li><a href="./03_23_FBFUN_ModuleExecution.html#TOC_ModuleStop">ModuleStop</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_24_FBFUN_DeviceAddress.html">软元件地址</a></div>
+                  <ul>
+                    <li><a href="./03_24_FBFUN_DeviceAddress.html#TOC_DevAddressGet">DevAddressGet</a></li>
+                    <li><a href="./03_24_FBFUN_DeviceAddress.html#TOC_DevAddressInc">DevAddressInc</a></li>
+                    <li><a href="./03_24_FBFUN_DeviceAddress.html#TOC_DevAddressDec">DevAddressDec</a></li>
+                    <li><a href="./03_24_FBFUN_DeviceAddress.html#TOC_DevAddressAdd">DevAddressAdd</a></li>
+                    <li><a href="./03_24_FBFUN_DeviceAddress.html#TOC_DevAddressSub">DevAddressSub</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_25_FBFUN_Interrupt.html">中断</a></div>
+                  <ul>
+                    <li><a href="./03_25_FBFUN_Interrupt.html#TOC_EnableInterrupt">EnableInterrupt</a></li>
+                    <li><a href="./03_25_FBFUN_Interrupt.html#TOC_DisableInterrupt">DisableInterrupt</a></li>
+                    <li><a href="./03_25_FBFUN_Interrupt.html#TOC_DisableInterruptRange">DisableInterruptRange</a></li>
+                    <li><a href="./03_25_FBFUN_Interrupt.html#TOC_SetInputInterruptConditio">SetInputInterruptCondition</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_26_FBFUN_Logging.html">日志</a></div>
+                  <ul>
+                    <li><a href="./03_26_FBFUN_Logging.html#TOC_LoggingEnable">LoggingEnable</a></li>
+                    <li><a href="./03_26_FBFUN_Logging.html#TOC_LoggingDisable">LoggingDisable</a></li>
+                    <li><a href="./03_26_FBFUN_Logging.html#TOC_LoggingTrigger">LoggingTrigger</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_27_FBFUN_OperationRecord.html">运转记录</a></div>
+                  <ul>
+                    <li><a href="./03_27_FBFUN_OperationRecord.html#TOC_OperationRecordCapture">OperationRecordCapture</a></li>
+                    <li><a href="./03_27_FBFUN_OperationRecord.html#TOC_OperationRecordSave">OperationRecordSave</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_28_FBFUN_VariableAccess.html">访问变量</a></div>
+                  <ul>
+                    <li><a href="./03_28_FBFUN_VariableAccess.html#TOC_DevInfoGet">DevInfoGet</a></li>
+                    <li><a href="./03_28_FBFUN_VariableAccess.html#TOC_DevInfoRead">DevInfoRead</a></li>
+                    <li><a href="./03_28_FBFUN_VariableAccess.html#TOC_DevInfoWrite">DevInfoWrite</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_29_FBFUN_UnitProgram.html">单元程序</a></div>
+                  <ul>
+                    <li><a href="./03_29_FBFUN_UnitProgram.html#TOC_UPStart">UPStart</a></li>
+                    <li><a href="./03_29_FBFUN_UnitProgram.html#TOC_UPStop">UPStop</a></li>
+                    <li><a href="./03_29_FBFUN_UnitProgram.html#TOC_UFSuspend">UFSuspend</a></li>
+                    <li><a href="./03_29_FBFUN_UnitProgram.html#TOC_UFResume">UFResume</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_30_FBFUN_UnitOnly.html">单元专用</a></div>
+                  <ul>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_ReadBuf">U_ReadBuf</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_DisableOverCP">U_DisableOverCP</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_DisableOverVP">U_DisableOverVP</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_SockOpen">U_SockOpen</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_SockWriteBuf">U_SockWriteBuf</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_SockReadBuf">U_SockReadBuf</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_SockStatus">U_SockStatus</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_SockNonProcRecvSetting">U_SockNonProcRecvSetting</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_SockUDPTo">U_SockUDPTo</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_SockSelectPort">U_SockSelectPort</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_MailToGroup">U_MailToGroup</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_MailTo">U_MailTo</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_MailSubject">U_MailSubject</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_MailText">U_MailText</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_MailAttach">U_MailAttach</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_MailStatus">U_MailStatus</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_FTPClientStatus">U_FTPClientStatus</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_MsgTo">U_MsgTo</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_MsgSend">U_MsgSend</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_MsgRecv">U_MsgRecv</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_MsgStatus">U_MsgStatus</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_CyclicStop">U_CyclicStop</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_CyclicStart">U_CyclicStart</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_CyclicReadRegister">U_CyclicReadRegister</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_CyclicReadErr">U_CyclicReadErr</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PSReadBuf">U_PSReadBuf</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_CntReadCounter">U_CntReadCounter</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_CntReadHz">U_CntReadHz</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_CntReadRPM">U_CntReadRPM</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_CntReadInputCapture0">U_CntReadInputCapture0</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_CntReadInputCapture1">U_CntReadInputCapture1</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_CntWriteCounter">U_CntWriteCounter</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_CntWriteCTC0">U_CntWriteCTC0</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_CntWriteCTC1">U_CntWriteCTC1</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_CntWritePreset">U_CntWritePreset</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_ADRead">U_ADRead</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_ADReadBlock">U_ADReadBlock</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_ADWriteOffset">U_ADWriteOffset</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_ADWriteAverage">U_ADWriteAverage</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_ADWriteScaling">U_ADWriteScaling</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_ADWriteCmpLimit">U_ADWriteCmpLimit</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_DAWrite">U_DAWrite</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_DAWriteOffset">U_DAWriteOffset</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_DAWriteScaling">U_DAWriteScaling</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_DAWriteUpperLowerLimit">U_DAWriteUpperLowerLimit</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosWritePointNo">U_PosWritePointNo</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosReadCurrentPointNo">U_PosReadCurrentPointNo</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosReadMCode">U_PosReadMCode</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosReadActPos">U_PosReadActPos</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosReadActVel">U_PosReadActVel</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosReadFeedbackTrq">U_PosReadFeedbackTrq</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosReadCmdPos">U_PosReadCmdPos</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosReadCmdVel">U_PosReadCmdVel</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosWriteChgPos">U_PosWriteChgPos</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosWriteChgTargetPos">U_PosWriteChgTargetPos</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosWriteChgTargetVel">U_PosWriteChgTargetVel</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosWriteChgVel">U_PosWriteChgVel</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosWriteOverride">U_PosWriteOverride</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosReadCtrlMode">U_PosReadCtrlMode</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosWriteCtrlMode">U_PosWriteCtrlMode</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosWriteVelCtrlCmdVel">U_PosWriteVelCtrlCmdVel</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosWriteVelCtrlTrqLimit">U_PosWriteVelCtrlTrqLimit</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosWriteTrqCtrlCmdTrq">U_PosWriteTrqCtrlCmdTrq</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosWriteTrqCtrlVelLimit">U_PosWriteTrqCtrlVelLimit</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosReadAxisErrCode">U_PosReadAxisErrCode</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U">U_PosWriteSelectSpecialFunc</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_31_FBFUN_UnitTypeDetamination.html">单元类型判定</a></div>
+                  <ul>
+                    <li><a href="./03_31_FBFUN_UnitTypeDetamination.html#TOC_IS">IS_***</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_32_FBFUN_Motion.html">运动</a></div>
+                  <ul>
+                    <li><a href="./03_32_FBFUN_Motion.html#TOC_运动控制指令列表">运动控制指令列表</a></li>
+                    <li><a href="./03_32_FBFUN_Motion.html#TOC_通用自变量">通用自变量</a></li>
+                    <li><a href="./03_32_FBFUN_Motion.html#TOC_缓冲">缓冲</a></li>
+                    <li><a href="./03_32_FBFUN_Motion.html#TOC_TransitionMode">TransitionMode</a></li>
+                    <li><a href="./03_32_FBFUN_Motion.html#TOC_切换控制模式">切换控制模式</a></li>
+                    <li><a href="./03_32_FBFUN_Motion.html#TOC_同时执行多个运动控制指令">同时执行多个运动控制指令</a></li>
+                    <li><a href="./03_32_FBFUN_Motion.html#TOC_运动控制指令的注意事项">运动控制指令的注意事项</a></li>
+                    <li><a href="./03_32_FBFUN_Motion.html#TOC_各指令的动作说明通用事项">各指令的动作说明通用事项</a></li>
+                    <li>
+                      <div><span class="toc_button"></span><a href="./03_32_FBFUN_Motion.html#TOC_通用控制FB">通用控制FB</a></div>
+                      <ul>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_OperationEnable">MC_OperationEnable</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_ImmediateStopAll">MC_ImmediateStopAll</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_SaveParameter">MC_SaveParameter</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC1">MC_UpdateSyncContactParameter</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC2">MC_SetSyncExternalReference</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_RefreshMotionVariable">MC_RefreshMotionVariable</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_CamRead">MC_CamRead</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_CamWrite">MC_CamWrite</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_CamGenerate">MC_CamGenerate</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_ClearMaxCycleTime">MC_ClearMaxCycleTime</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div><span class="toc_button"></span><a href="./03_32_FBFUN_Motion.html#TOC_轴控制FB">轴控制FB</a></div>
+                      <ul>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_Power">MC_Power</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_Reset">MC_Reset</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_Home">MC_Home</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_Stop">MC_Stop</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_ImmediateStop">MC_ImmediateStop</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_Jog">MC_Jog</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_SetPosition">MC_SetPosition</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_SetOverride">MC_SetOverride</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_MoveAbsolute">MC_MoveAbsolute</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_MoveRelative">MC_MoveRelative</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_MoveVelocity">MC_MoveVelocity</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_TorqueControl">MC_TorqueControl</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_VelocityControl">MC_VelocityControl</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_InternalStopSensor">MC_InternalStopSensor</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_MaskStopSensor">MC_MaskStopSensor</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_InternalHomeSensor">MC_InternalHomeSensor</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_SetTorqueLimit">MC_SetTorqueLimit</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_SetVelocityFeedforward">MC_SetVelocityFeedforward</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_SetTorqueFeedforward">MC_SetTorqueFeedforward</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_MoveToBasePosition">MC_MoveToBasePosition</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_FastMoveToHome">MC_FastMoveToHome</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_MoveToPoint">MC_MoveToPoint</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_ChangeTargetPosition">MC_ChangeTargetPosition</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC3">MC_ChangeTargetGroupPositions</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_ChangeTargetVelocity">MC_ChangeTargetVelocity</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_ResumePositioning">MC_ResumePositioning</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_MoveToNextPoint">MC_MoveToNextPoint</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_SuspendNextPositioning">MC_SuspendNextPositioning</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_StopAtTargetPosition">MC_StopAtTargetPosition</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_MCodeOff">MC_MCodeOff</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_ReleaseStandby">MC_ReleaseStandby</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_Teach">MC_Teach</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC4">MC_AbsolutePosFollowUpControl</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC5">MC_SyncTypeFollowUpControl</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_SyncControl">MC_SyncControl</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_MainClutch">MC_MainClutch</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_AuxClutch">MC_AuxClutch</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_SwitchCam">MC_SwitchCam</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_TorqueLimitClutch">MC_TorqueLimitClutch</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_StopSimMechanicalSync">MC_StopSimMechanicalSync</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_MainAxisPhasing">MC_MainAxisPhasing</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_AuxAxisPhasing">MC_AuxAxisPhasing</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div><span class="toc_button"></span><a href="./03_32_FBFUN_Motion.html#TOC_轴群组控制FB">轴群组控制FB</a></div>
+                      <ul>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_GroupStop">MC_GroupStop</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_MoveLinearAbsolute">MC_MoveLinearAbsolute</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_MoveLinearRelative">MC_MoveLinearRelative</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_MoveCircularAbsolute">MC_MoveCircularAbsolute</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_MoveCircularRelative">MC_MoveCircularRelative</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="./03_32_FBFUN_Motion.html#TOC_错误代码">错误代码</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_33_FBFUN_EtherCAT.html">EtherCAT</a></div>
+                  <ul>
+                    <li><a href="./03_33_FBFUN_EtherCAT.html#TOC_EC_CoE_SDORead">EC_CoE_SDORead</a></li>
+                    <li><a href="./03_33_FBFUN_EtherCAT.html#TOC_EC_CoE_SDOWrite">EC_CoE_SDOWrite</a></li>
+                    <li><a href="./03_33_FBFUN_EtherCAT.html#TOC_EC_CoE_PDOStop">EC_CoE_PDOStop</a></li>
+                    <li><a href="./03_33_FBFUN_EtherCAT.html#TOC_EC_CoE_PDORestart">EC_CoE_PDORestart</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div><span class="toc_button"></span><a href="./04_00_ST-1.html">第4章 ST语法</a></div>
+              <ul>
+                <li>
+                  <div><span class="toc_button"></span><a href="./04_00_ST-2.html">赋值语句</a></div>
+                  <ul>
+                    <li><a href="./04_00_ST-2.html#TOC_赋值语句的用法">赋值语句的用法</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./04_00_ST-3.html">运算符</a></div>
+                  <ul>
+                    <li><a href="./04_00_ST-3.html#TOC_运算符一览">运算符一览</a></li>
+                    <li><a href="./04_00_ST-3.html#TOC_关于优先顺序">关于优先顺序</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./04_00_ST-4.html">控制语句</a></div>
+                  <ul>
+                    <li><a href="./04_00_ST-4.html#TOC_控制语句一览">控制语句一览</a></li>
+                    <li><a href="./04_00_ST-4.html#TOC_IF_语句_条件分支_1">IF ～ 语句(条件分支 1)</a></li>
+                    <li><a href="./04_00_ST-4.html#TOC_IF_ELSE_语句_条件分支_2">IF ～ ELSE 语句(条件分支 2)</a></li>
+                    <li><a href="./04_00_ST-4.html#TOC_IF_ELSIF_语句_条件分支_3">IF ～ ELSIF ～ 语句(条件分支 3)</a></li>
+                    <li><a href="./04_00_ST-4.html#TOC_CASE_语句_多分支控制">CASE ～ 语句(多分支控制)</a></li>
+                    <li><a href="./04_00_ST-4.html#TOC_FOR_END_FOR_语句_指定次数的循环控制">FOR ～ END_FOR 语句（指定次数的循环控制）</a></li>
+                    <li><a href="./04_00_ST-4.html#TOC_WHILE_语句_前判定循环控制">WHILE 语句（前判定循环控制）</a></li>
+                    <li><a href="./04_00_ST-4.html#TOC_REPEAT_语句_后判定循环控制">REPEAT 语句（后判定循环控制）</a></li>
+                    <li><a href="./04_00_ST-4.html#TOC_EXIT_处理">EXIT 处理</a></li>
+                    <li><a href="./04_00_ST-4.html#TOC_CONTINUE_处理">CONTINUE 处理</a></li>
+                    <li><a href="./04_00_ST-4.html#TOC_RETURN_处理">RETURN 处理</a></li>
+                    <li><a href="./04_00_ST-4.html#TOC_使用控制语句时的注意事项">使用控制语句时的注意事项</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div><span class="toc_button"></span><a href="./99_00_Appendix-1.html">附录</a></div>
+              <ul>
+                <li>
+                  <div><span class="toc_button"></span><a href="./99_00_Appendix-2.html">处理时间的参考</a></div>
+                  <ul>
+                    <li><a href="./99_00_Appendix-2.html#TOC_程序执行时间的参考值">程序执行时间的参考值</a></li>
+                    <li><a href="./99_00_Appendix-2.html#TOC_缩短执行时间">缩短执行时间</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./99_00_Appendix-3.html">示例程序</a></div>
+                  <ul>
+                    <li>
+                      <div><span class="toc_button"></span><a href="./99_00_Appendix-4.html">梯形图程序</a></div>
+                      <ul>
+                        <li><a href="./99_00_Appendix-4.html#TOC_通电延时定时器">通电延时定时器</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_数组的移位">数组的移位</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_三角函数_SIN_COS_TAN">三角函数（SIN/COS/TAN）</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_反三角函数_ASIN_ACOS_ATAN">反三角函数（ASIN/ACOS/ATAN）</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_数据的排序">数据的排序</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_计算平均值_数据类型转换">计算平均值（数据类型转换）</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_FIFO">FIFO</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_将二进制数据写入CSV">将二进制数据写入CSV</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_将字符串写入CSV">将字符串写入CSV</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_获取文件夹内的文件列表">获取文件夹内的文件列表</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_TCP套接字通信">TCP套接字通信</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_UDP套接字通信">UDP套接字通信</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_通过Ping进行连接确认">通过Ping进行连接确认</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_缓冲存储器的读写_多个数据">缓冲存储器的读写（多个数据）</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_缓冲存储器的读写_单个数据">缓冲存储器的读写（单个数据）</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_2点间的时间测量">2点间的时间测量</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_禁止中断_指定范围">禁止中断（指定范围）</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_获取固定周期_单元间同步_中断时的日志数据">获取固定周期/单元间同步/中断时的日志数据</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_获取固定周期_单元间同步_中断时的运行记录数据">获取固定周期/单元间同步/中断时的运行记录数据</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_保存运行记录">保存运行记录</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_程序资产化">程序资产化</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_单轴控制">单轴控制</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_动作允许和伺服开启">动作允许和伺服开启</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_清除错误">清除错误</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_JOG">JOG</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_原点复归">原点复归</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_原点复归_原点传感器请求">原点复归/原点传感器请求</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_原点复归_基本位置移动">原点复归/基本位置移动</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_高速原点移动">高速原点移动</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_连续定位">连续定位</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_连续定位_缓冲模式">连续定位（缓冲模式）</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_运行中更改参数">运行中更改参数</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_定位和减速停止_重新开始运行_点参数">定位和减速停止/重新开始运行（点参数）</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_连续运行的待机与解除_点参数">连续运行的待机与解除（点参数）</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_运行中更改参数_点参数">运行中更改参数（点参数）</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_直线插补">直线插补</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_圆弧插补">圆弧插补</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_速度控制_转矩控制">速度控制/转矩控制</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_同步控制">同步控制</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_离合器">离合器</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div><span class="toc_button"></span><a href="./99_00_Appendix-5.html">ST</a></div>
+                      <ul>
+                        <li><a href="./99_00_Appendix-5.html#TOC_检测上升沿_下降沿">检测上升沿/下降沿</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_通电延时定时器1">通电延时定时器</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_数组的移位1">数组的移位</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_三角函数_SIN_COS_TAN1">三角函数（SIN/COS/TAN）</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_反三角函数_ASIN_ACOS_ATAN1">反三角函数（ASIN/ACOS/ATAN）</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_数据的排序1">数据的排序</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_计算合计值">计算合计值</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_FIFO1">FIFO</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_创建时间戳">创建时间戳</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_计算平均值_数据类型转换1">计算平均值（数据类型转换）</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_将二进制数据写入CSV1">将二进制数据写入CSV</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_将字符串写入CSV1">将字符串写入CSV</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_获取文件夹内的文件列表1">获取文件夹内的文件列表</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_TCP套接字通信1">TCP套接字通信</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_UDP套接字通信1">UDP套接字通信</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_通过Ping进行连接确认1">通过Ping进行连接确认</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_缓冲存储器的读写_多个数据1">缓冲存储器的读写（多个数据）</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_缓冲存储器的读写_单个数据1">缓冲存储器的读写（单个数据）</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_2点间的时间测量1">2点间的时间测量</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_间接指定软元件">间接指定软元件</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_根据条件进行分支处理">根据条件进行分支处理</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_单轴控制1">单轴控制</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_动作允许和伺服开启1">动作允许和伺服开启</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_清除错误1">清除错误</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_JOG1">JOG</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_原点复归1">原点复归</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_原点复归_原点传感器请求1">原点复归/原点传感器请求</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_原点复归_基本位置移动1">原点复归/基本位置移动</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_高速原点移动1">高速原点移动</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_连续定位1">连续定位</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_连续定位_缓冲模式1">连续定位（缓冲模式）</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_运行中更改参数1">运行中更改参数</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_定位和减速停止_重新开始运行_点参数1">定位和减速停止/重新开始运行（点参数）</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_连续运行的待机与解除_点参数1">连续运行的待机与解除（点参数）</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_运行中更改参数_点参数1">运行中更改参数（点参数）</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_直线插补1">直线插补</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_圆弧插补1">圆弧插补</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_速度控制_转矩控制1">速度控制/转矩控制</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_同步控制1">同步控制</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_离合器1">离合器</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="contents">
+        <div id="top">
+          <div dir="ltr">
+            <p dir="ltr" class="FM_01_02_HL2"><a id="XREF_61547"></a>运转记录</p>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T07_NomalTable_WidthFit_TH1" style="max-width: 100% ;height: auto">
+                <tr class="tr4">
+                  <td class="td5">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">FUN/FB</p>
+                  </td>
+                  <td class="td5">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">名称</p>
+                  </td>
+                  <td class="td57">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">概述</p>
+                  </td>
+                </tr>
+                <tr class="tr4">
+                  <td class="td5">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_"><span class="FM_C05_RefLink"><a href="#HT_OperationRecordCapture">OperationRecordCapture</a></span></p>
+                  </td>
+                  <td class="td5">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">获取运转记录数据</p>
+                  </td>
+                  <td class="td57">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">获取指定运转记录ID的数据。</p>
+                  </td>
+                </tr>
+                <tr class="tr4">
+                  <td class="td5">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_"><span class="FM_C05_RefLink"><a href="#HT_OperationRecordSave">OperationRecordSave</a></span></p>
+                  </td>
+                  <td class="td5">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">执行运转记录保存</p>
+                  </td>
+                  <td class="td57">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">保存指定运转记录ID的运转记录。</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p dir="ltr" class="FM_07_00_CommandAnchor"><a id="CSH_314"></a><a id="HT_OperationRecordCapture"></a></p>
+            <div style="text-align:left">
+              <p id="TOC_OperationRecordCapture" class="toc_anchor" />
+              <table dir="ltr" class="table58 T30_FYBFBTitle" style="max-width: 100% ;height: auto">
+                <tr class="tr113">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_07_01_Command">OperationRecordCapture</p>
+                  </td>
+                  <td class="td60">
+                    <p dir="ltr" class="FM_07_04_FUNFBName">获取运转记录数据</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T07_NomalTable_WidthFit_TH1" style="max-width: 100% ;height: auto">
+                <tr class="tr4">
+                  <td class="td83" colspan="2">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">名称</p>
+                  </td>
+                  <td class="td115">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">FUN/FB</p>
+                  </td>
+                  <td class="td109">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">LD描述</p>
+                  </td>
+                  <td class="td116">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">ST描述</p>
+                  </td>
+                </tr>
+                <tr class="tr118">
+                  <td class="td27">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">OperationRecordCap­ture</p>
+                  </td>
+                  <td class="td27">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">获取运转记录数据</p>
+                  </td>
+                  <td class="td115">
+                    <p dir="ltr" class="FM_05_04_TableBody_Center_">FUN</p>
+                  </td>
+                  <td class="td109">
+                    <p dir="ltr" class="FM_04_03_ImageIllust_Center_">
+                      <img alt="LD_OperationRecordCapture.svg" id="image747" src="image/LD_OperationRecordCapture.svg" style="max-width: 100% ;height: auto" /> </p>
+                  </td>
+                  <td class="td116">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">OperationRecordCapture(ID);</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T07_NomalTable_WidthFit_TH1" style="max-width: 100% ;height: auto">
+                <tr class="tr4">
+                  <td class="td61">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">自变量</p>
+                  </td>
+                  <td class="td61">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">类型</p>
+                  </td>
+                  <td class="td61">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">数据类型</p>
+                  </td>
+                  <td class="td51">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">默认值</p>
+                  </td>
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">注释</p>
+                  </td>
+                </tr>
+                <tr class="tr4">
+                  <td class="td61">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_"><span class="FM_C05_RefLink"><a href="01_01_Overview-6.html#HT_Commonargument">EN</a></span></p>
+                  </td>
+                  <td class="td61">
+                    <p dir="ltr" class="FM_05_04_TableBody_Center_">IN</p>
+                  </td>
+                  <td class="td61">
+                    <p dir="ltr" class="FM_05_04_TableBody_Center_">BOOL</p>
+                  </td>
+                  <td class="td51">
+                    <p dir="ltr" class="FM_05_04_TableBody_Center_">-</p>
+                  </td>
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">使能输入</p>
+                  </td>
+                </tr>
+                <tr class="tr4">
+                  <td class="td61">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_"><span class="FM_C05_RefLink"><a href="01_01_Overview-6.html#HT_Commonargument">ENO</a></span></p>
+                  </td>
+                  <td class="td61">
+                    <p dir="ltr" class="FM_05_04_TableBody_Center_">OUT</p>
+                  </td>
+                  <td class="td61">
+                    <p dir="ltr" class="FM_05_04_TableBody_Center_">BOOL</p>
+                  </td>
+                  <td class="td51">
+                    <p dir="ltr" class="FM_05_04_TableBody_Center_">-</p>
+                  </td>
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">使能输出</p>
+                  </td>
+                </tr>
+                <tr class="tr4">
+                  <td class="td61">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">ID</p>
+                  </td>
+                  <td class="td61">
+                    <p dir="ltr" class="FM_05_04_TableBody_Center_">IN</p>
+                  </td>
+                  <td class="td61">
+                    <p dir="ltr" class="FM_05_04_TableBody_Center_">UINT</p>
+                  </td>
+                  <td class="td51">
+                    <p dir="ltr" class="FM_05_04_TableBody_Center_">0</p>
+                  </td>
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">运转记录ID</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p dir="ltr" class="FM_01_04_HL4">动作说明</p>
+            <p dir="ltr" class="FM_02_01_Body">获取用<span class="FM_C10_Variable">ID</span>指定的运转记录ID的数据。</p>
+            <p dir="ltr" class="FM_02_01_Body">如果对采样周期设定“SCAN”或“固定周期”，则会获取END处理时的数据，但如果对采样周期设定“触发指令”，则可通过使用OperationRecordCapture指令，获取任意时间点的数据。</p>
+            <p dir="ltr" class="FM_01_04_HL4">执行时的错误条件</p>
+            <p dir="ltr" class="FM_02_02_DotBody"><span class="FM_C00_DotDash">•<span style="padding-left: 4pt;" class="FMAutoNumber_1"></span></span>对<span class="FM_C10_Variable">ID</span>设定的值超过了运转记录ID的最大值</p>
+            <p dir="ltr" class="FM_99_03_BlankLine"> </p>
+            <p dir="ltr" class="FM_02_01_Body">上述以外条件以及发生错误时的动作，请参阅下述说明。</p>
+            <p dir="ltr" class="FM_02_01_Body"><span>
+                <img alt="Link.svg" id="image748" src="image/Link.svg" style="max-width: 100% ;height: auto" />
+              </span><span class="FM_C05_RefLink"></span><a href="01_01_Overview-7.html#XREF_49958"><span class="FM_C05_RefLink">运算错误</span></a><span class="FM_C05_RefLink"></span></p>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T03_PointImportant" style="max-width: 100% ;height: auto">
+                <tr class="tr32">
+                  <td class="td8">
+                    <p dir="ltr" class="FM_06_02_SymbolAnchor_POINT_"> <br><img src="image/Point.svg" style=" width:48.2pt; height:15.6pt;" class="RefImage" alt="Point.svg" /></p>
+                  </td>
+                  <td class="td9">
+                    <p dir="ltr" class="FM_06_03_SafetyBody">使用OperationRecordCapture指令获取数据时，需要预先在“KV STUDIO”的“运转记录设定”－“软元件记录设定”中，将采样周期设定为“触发指令”。</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p dir="ltr" class="FM_01_04_HL4">示例程序</p>
+            <p dir="ltr" class="FM_02_01_Body">
+              <img alt="Link.svg" id="image749" src="image/Link.svg" style="max-width: 100% ;height: auto" />梯形图：<a href="99_00_Appendix-4.html#XREF_10125"><span class="FM_C05_RefLink">获取固定周期/单元间同步/中断时的运行记录数据</span></a></p>
+            <p dir="ltr" class="FM_07_00_CommandAnchor"><a id="CSH_315"></a><a id="HT_OperationRecordSave"></a></p>
+            <div style="text-align:left">
+              <p id="TOC_OperationRecordSave" class="toc_anchor" />
+              <table dir="ltr" class="table58 T30_FYBFBTitle" style="max-width: 100% ;height: auto">
+                <tr class="tr113">
+                  <td class="td41">
+                    <p dir="ltr" class="FM_07_01_Command">OperationRecordSave</p>
+                  </td>
+                  <td class="td114">
+                    <p dir="ltr" class="FM_07_04_FUNFBName">执行运转记录保存</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T07_NomalTable_WidthFit_TH1" style="max-width: 100% ;height: auto">
+                <tr class="tr4">
+                  <td class="td83" colspan="2">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">名称</p>
+                  </td>
+                  <td class="td115">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">FUN/FB</p>
+                  </td>
+                  <td class="td109">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">LD描述</p>
+                  </td>
+                  <td class="td116">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">ST描述</p>
+                  </td>
+                </tr>
+                <tr class="tr120">
+                  <td class="td27">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">OperationRecordSave</p>
+                  </td>
+                  <td class="td27">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">执行运转记录保存</p>
+                  </td>
+                  <td class="td115">
+                    <p dir="ltr" class="FM_05_04_TableBody_Center_">FUN</p>
+                  </td>
+                  <td class="td109">
+                    <p dir="ltr" class="FM_04_03_ImageIllust_Center_">
+                      <img alt="LD_OperationRecordSave.svg" id="image750" src="image/LD_OperationRecordSave.svg" style="max-width: 100% ;height: auto" /> </p>
+                  </td>
+                  <td class="td116">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">OperationRecordSave(ID, TrgComment);</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T07_NomalTable_WidthFit_TH1" style="max-width: 100% ;height: auto">
+                <tr class="tr4">
+                  <td class="td61">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">自变量</p>
+                  </td>
+                  <td class="td61">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">类型</p>
+                  </td>
+                  <td class="td61">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">数据类型</p>
+                  </td>
+                  <td class="td51">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">默认值</p>
+                  </td>
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">注释</p>
+                  </td>
+                </tr>
+                <tr class="tr4">
+                  <td class="td61">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_"><span class="FM_C05_RefLink"><a href="01_01_Overview-6.html#HT_Commonargument">EN</a></span></p>
+                  </td>
+                  <td class="td61">
+                    <p dir="ltr" class="FM_05_04_TableBody_Center_">IN</p>
+                  </td>
+                  <td class="td61">
+                    <p dir="ltr" class="FM_05_04_TableBody_Center_">BOOL</p>
+                  </td>
+                  <td class="td51">
+                    <p dir="ltr" class="FM_05_04_TableBody_Center_">-</p>
+                  </td>
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">使能输入</p>
+                  </td>
+                </tr>
+                <tr class="tr4">
+                  <td class="td61">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_"><span class="FM_C05_RefLink"><a href="01_01_Overview-6.html#HT_Commonargument">ENO</a></span></p>
+                  </td>
+                  <td class="td61">
+                    <p dir="ltr" class="FM_05_04_TableBody_Center_">OUT</p>
+                  </td>
+                  <td class="td61">
+                    <p dir="ltr" class="FM_05_04_TableBody_Center_">BOOL</p>
+                  </td>
+                  <td class="td51">
+                    <p dir="ltr" class="FM_05_04_TableBody_Center_">-</p>
+                  </td>
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">使能输出</p>
+                  </td>
+                </tr>
+                <tr class="tr4">
+                  <td class="td61">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">ID</p>
+                  </td>
+                  <td class="td61">
+                    <p dir="ltr" class="FM_05_04_TableBody_Center_">IN</p>
+                  </td>
+                  <td class="td61">
+                    <p dir="ltr" class="FM_05_04_TableBody_Center_">UINT</p>
+                  </td>
+                  <td class="td51">
+                    <p dir="ltr" class="FM_05_04_TableBody_Center_">0</p>
+                  </td>
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">运转记录ID</p>
+                  </td>
+                </tr>
+                <tr class="tr4">
+                  <td class="td61">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">TrgComment</p>
+                  </td>
+                  <td class="td61">
+                    <p dir="ltr" class="FM_05_04_TableBody_Center_">IN</p>
+                  </td>
+                  <td class="td61">
+                    <p dir="ltr" class="FM_05_04_TableBody_Center_">STRING[64]</p>
+                  </td>
+                  <td class="td51">
+                    <p dir="ltr" class="FM_05_04_TableBody_Center_">''</p>
+                  </td>
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">触发注释</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p dir="ltr" class="FM_01_04_HL4">动作说明</p>
+            <p dir="ltr" class="FM_02_01_Body">保存用<span class="FM_C10_Variable">ID</span>指定的运转记录ID的运转记录。</p>
+            <p dir="ltr" class="FM_02_01_Body">可将用<span class="FM_C10_Variable">TrgComment</span>指定的字符串作为触发注释，添加到保存文件夹名中。</p>
+            <p dir="ltr" class="FM_02_01_Body">完成保存后，系统变量_OperationRecorder[n].SaveComplete（n：运转记录ID）变为TRUE。</p>
+            <p dir="ltr" class="FM_01_04_HL4">执行时的错误条件</p>
+            <p dir="ltr" class="FM_02_02_DotBody"><span class="FM_C00_DotDash">•<span style="padding-left: 4pt;" class="FMAutoNumber_1"></span></span>对<span class="FM_C10_Variable">ID</span>设定的值超过了运转记录ID的最大值</p>
+            <p dir="ltr" class="FM_99_03_BlankLine"> </p>
+            <p dir="ltr" class="FM_02_01_Body">上述以外条件以及发生错误时的动作，请参阅下述说明。</p>
+            <p dir="ltr" class="FM_02_01_Body"><span>
+                <img alt="Link.svg" id="image751" src="image/Link.svg" style="max-width: 100% ;height: auto" />
+              </span><span class="FM_C05_RefLink"></span><a href="01_01_Overview-7.html#XREF_49958"><span class="FM_C05_RefLink">运算错误</span></a><span class="FM_C05_RefLink"></span></p>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T03_PointImportant" style="max-width: 100% ;height: auto">
+                <tr class="tr11">
+                  <td class="td8">
+                    <p dir="ltr" class="FM_06_02_SymbolAnchor_POINT_"> <br><img src="image/Point.svg" style=" width:48.2pt; height:15.6pt;" class="RefImage" alt="Point.svg" /></p>
+                  </td>
+                  <td class="td9">
+                    <p dir="ltr" class="FM_06_04_SafetyDotBody"><span class="FM_C00_DotDash">•<span style="padding-left: 3pt;" class="FMAutoNumber_1"></span></span>完成保存的时间，请确认系统变量_OperationRecorder[n].SaveComplete（n：运转记录ID）。</p>
+                    <p dir="ltr" class="FM_06_04_SafetyDotBody"><span class="FM_C00_DotDash">•<span style="padding-left: 3pt;" class="FMAutoNumber_1"></span></span>对<span class="FM_C10_Variable">TrgComment</span>设定的字符串中如有下述字符，会转换为'_'。</p>
+                    <p dir="ltr" class="FM_06_06_SafetyDashBody"><span class="FM_C00_DotDash">‒</span>半角12个字符 * / &lt; &gt; ? \ ｜ % , : ; "</p>
+                    <p dir="ltr" class="FM_06_06_SafetyDashBody"><span class="FM_C00_DotDash">‒</span>全角7个字符 ／  :  ？╲ ＊ ［ ］</p>
+                    <p dir="ltr" class="FM_06_06_SafetyDashBody"><span class="FM_C00_DotDash">‒</span>ASCII控制码：01H～1FH、7FH</p>
+                    <p dir="ltr" class="FM_06_06_SafetyDashBody"><span class="FM_C00_DotDash">‒</span>NEC特殊字符（8740H～879CH）<span class="FM_C22_JAFONT_B">①</span>、<span class="FM_C22_JAFONT_B">㎝</span>、<span class="FM_C22_JAFONT_B">℡</span>、<span class="FM_C22_JAFONT_B">㍻</span>  等</p>
+                    <p dir="ltr" class="FM_06_06_SafetyDashBody"><span class="FM_C00_DotDash">‒</span>NEC选择的IBM扩展字符（ED40H～EEFCH）</p>
+                    <p dir="ltr" class="FM_06_06_SafetyDashBody"><span class="FM_C00_DotDash">‒</span>IBM选择的IBM扩展字符（FA40H～FC4BH）</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p dir="ltr" class="FM_01_04_HL4">示例程序</p>
+            <p dir="ltr" class="FM_02_01_Body">
+              <img alt="Link.svg" id="image752" src="image/Link.svg" style="max-width: 100% ;height: auto" />梯形图：<a href="99_00_Appendix-4.html#XREF_40792"><span class="FM_C05_RefLink">保存运行记录</span></a></p>
+          </div>
+        </div>
+        <div id="pageTransition" class="hidden">
+          <div id="page_prev" class="hidden"><a href="">&lt;&lt; back</a></div>
+          <div id="page_next" class="hidden"><a href="">next &gt;&gt;</a></div>
+        </div>
+      </div>
+    </div>
+    <!-- フッター -->
+    <footer>
+      <div>
+            Copyright © 2024 KEYENCE CORPORATION. All rights reserved.
+        </div>
+    </footer>
+  </body>
+</html>

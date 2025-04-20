@@ -1,0 +1,1962 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>控制语句 | 可编程控制器 KV-X500/X300系列 指令参考手册 | 基恩士</title>
+    <link href="./css\CommandRM_forHTML.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="./css/frame.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="./css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="./js/script.js" defer></script>
+    <script src="./js/search.js" defer></script>
+  </head>
+  <body id="04_00_ST-4">
+    <!-- ヘッダー -->
+    <header>
+      <div>
+        <img id="logo" src="./css/img/logo.svg" alt="keyence_logo" />
+        <p>KV-X500/X300系列 指令参考手册</p>
+        <div id="search">
+          <form class="form_search" id="form_search" role="search" aria-expanded="true" action="searchresult.html">
+            <div class="search_control">
+              <input id="input_search" name="search" type="search" placeholder="输入搜索关键词" />
+              <input id="btn_search" title="search" type="submit" value="" />
+            </div>
+          </form>
+        </div><span id="menu_button">
+        </span></div>
+    </header>
+    <div id="main_contents">
+      <div id="menu"><span id="menu_close_button">
+        </span><nav id="toc">
+          <ul>
+            <li><a href="index.html"><span class="series">KV-X500/X300系列</span><span class="users_manual">指令参考手册</span></a></li>
+            <li>
+              <div><span class="toc_button"></span><a href="./00_01_Introduction-1.html">前言</a></div>
+              <ul>
+                <li><a href="./00_01_Introduction-1.html#TOC_相关手册">相关手册</a></li>
+              </ul>
+            </li>
+            <li><a href="./00_01_Introduction-2.html">安全使用注意事项</a></li>
+            <li><a href="./00_01_Introduction-3.html">使用手册的构成</a></li>
+            <li><a href="./00_01_Introduction-4.html">用语和符号</a></li>
+            <li>
+              <div><span class="toc_button"></span><a href="./01_01_Overview-1.html">第1章 指令概述</a></div>
+              <ul>
+                <li><a href="./01_01_Overview-2.html">指令的分类</a></li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./01_01_Overview-3.html">指令说明</a></div>
+                  <ul>
+                    <li><a href="./01_01_Overview-3.html#TOC_指令">指令</a></li>
+                    <li><a href="./01_01_Overview-3.html#TOC_FUN_FB">FUN/FB</a></li>
+                    <li><a href="./01_01_Overview-3.html#TOC_其它注意事项">其它注意事项</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./01_01_Overview-4.html">后缀</a></div>
+                  <ul>
+                    <li><a href="./01_01_Overview-4.html#TOC_后缀的定义">后缀的定义</a></li>
+                    <li><a href="./01_01_Overview-4.html#TOC_数据类型的自动转换">数据类型的自动转换</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./01_01_Overview-5.html">每次扫描执行型和差分执行型</a></div>
+                  <ul>
+                    <li><a href="./01_01_Overview-5.html#TOC_概述">概述</a></li>
+                    <li><a href="./01_01_Overview-5.html#TOC_改为微分执行型">改为微分执行型</a></li>
+                    <li><a href="./01_01_Overview-5.html#TOC_检测执行条件的上升沿_下降沿的条件">检测执行条件的上升沿/下降沿的条件</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./01_01_Overview-6.html">FUN/FB的通用自变量</a></div>
+                  <ul>
+                    <li><a href="./01_01_Overview-6.html#TOC_FUN的通用自变量">FUN的通用自变量</a></li>
+                    <li><a href="./01_01_Overview-6.html#TOC_FB的通用自变量">FB的通用自变量</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./01_01_Overview-7.html">运算错误</a></div>
+                  <ul>
+                    <li><a href="./01_01_Overview-7.html#TOC_运算错误的发生条件">运算错误的发生条件</a></li>
+                    <li><a href="./01_01_Overview-7.html#TOC_发生运算错误时的动作">发生运算错误时的动作</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div><span class="toc_button"></span><a href="./02_00_Instruction.html">第2章 指令</a></div>
+              <ul>
+                <li>
+                  <div><span class="toc_button"></span><a href="./02_01_Instruction_ContactInOut.html">接点输入/输出</a></div>
+                  <ul>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_LD">LD</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_LDB">LDB</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_AND">AND</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_ANB">ANB</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_OR">OR</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_ORB">ORB</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_LDP">LDP</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_ANP">ANP</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_ORP">ORP</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_LDF">LDF</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_ANF">ANF</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_ORF">ORF</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_LDPB">LDPB</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_ANPB">ANPB</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_ORPB">ORPB</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_LDFB">LDFB</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_ANFB">ANFB</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_ORFB">ORFB</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_OUT">OUT</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_OUB">OUB</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_SET">SET</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_RES">RES</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_DIFU">DIFU</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_DIFD">DIFD</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_ONDL">ONDL</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_OFDL">OFDL</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_SHOT">SHOT</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_FLIK">FLIK</a></li>
+                    <li><a href="./02_01_Instruction_ContactInOut.html#TOC_ALT">ALT</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./02_02_Instruction_BitInOut.html">位输入/输出</a></div>
+                  <ul>
+                    <li><a href="./02_02_Instruction_BitInOut.html#TOC_BLD">BLD</a></li>
+                    <li><a href="./02_02_Instruction_BitInOut.html#TOC_BAND">BAND</a></li>
+                    <li><a href="./02_02_Instruction_BitInOut.html#TOC_BOR">BOR</a></li>
+                    <li><a href="./02_02_Instruction_BitInOut.html#TOC_BLDB">BLDB</a></li>
+                    <li><a href="./02_02_Instruction_BitInOut.html#TOC_BANB">BANB</a></li>
+                    <li><a href="./02_02_Instruction_BitInOut.html#TOC_BORB">BORB</a></li>
+                    <li><a href="./02_02_Instruction_BitInOut.html#TOC_BOUT">BOUT</a></li>
+                    <li><a href="./02_02_Instruction_BitInOut.html#TOC_BOUB">BOUB</a></li>
+                    <li><a href="./02_02_Instruction_BitInOut.html#TOC_BSET">BSET</a></li>
+                    <li><a href="./02_02_Instruction_BitInOut.html#TOC_BRES">BRES</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./02_03_Instruction_Comparison.html">比较</a></div>
+                  <ul>
+                    <li><a href="./02_03_Instruction_Comparison.html#TOC_">- &lt;- &lt; &gt;- &gt; &lt;&gt;</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./02_04_Instruction_TimerCounter.html">定时器 计数器</a></div>
+                  <ul>
+                    <li><a href="./02_04_Instruction_TimerCounter.html#TOC_TMR">TMR</a></li>
+                    <li><a href="./02_04_Instruction_TimerCounter.html#TOC_TMH">TMH</a></li>
+                    <li><a href="./02_04_Instruction_TimerCounter.html#TOC_TMS">TMS</a></li>
+                    <li><a href="./02_04_Instruction_TimerCounter.html#TOC_TMU">TMU</a></li>
+                    <li><a href="./02_04_Instruction_TimerCounter.html#TOC_C">C</a></li>
+                    <li><a href="./02_04_Instruction_TimerCounter.html#TOC_OUTC">OUTC</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./02_05_Instruction_ConnectTerminate.html">连接/结束</a></div>
+                  <ul>
+                    <li><a href="./02_05_Instruction_ConnectTerminate.html#TOC_END">END</a></li>
+                    <li><a href="./02_05_Instruction_ConnectTerminate.html#TOC_ENDH">ENDH</a></li>
+                    <li><a href="./02_05_Instruction_ConnectTerminate.html#TOC_CON">CON</a></li>
+                    <li><a href="./02_05_Instruction_ConnectTerminate.html#TOC_MPS">MPS</a></li>
+                    <li><a href="./02_05_Instruction_ConnectTerminate.html#TOC_MRD">MRD</a></li>
+                    <li><a href="./02_05_Instruction_ConnectTerminate.html#TOC_MPP">MPP</a></li>
+                    <li><a href="./02_05_Instruction_ConnectTerminate.html#TOC_ANL">ANL</a></li>
+                    <li><a href="./02_05_Instruction_ConnectTerminate.html#TOC_ORL">ORL</a></li>
+                    <li><a href="./02_05_Instruction_ConnectTerminate.html#TOC_INV">INV</a></li>
+                    <li><a href="./02_05_Instruction_ConnectTerminate.html#TOC_MEP">MEP</a></li>
+                    <li><a href="./02_05_Instruction_ConnectTerminate.html#TOC_MEF">MEF</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./02_06_Instruction_Arithmetic.html">算术</a></div>
+                  <ul>
+                    <li><a href="./02_06_Instruction_Arithmetic.html#TOC_CAL">CAL+</a></li>
+                    <li><a href="./02_06_Instruction_Arithmetic.html#TOC_CAL1">CAL-</a></li>
+                    <li><a href="./02_06_Instruction_Arithmetic.html#TOC_CAL2">CAL*</a></li>
+                    <li><a href="./02_06_Instruction_Arithmetic.html#TOC_CAL3">CAL/</a></li>
+                    <li><a href="./02_06_Instruction_Arithmetic.html#TOC_CAL4">CAL&amp;</a></li>
+                    <li><a href="./02_06_Instruction_Arithmetic.html#TOC_CAL5">CAL|</a></li>
+                    <li><a href="./02_06_Instruction_Arithmetic.html#TOC_CAL6">CAL^</a></li>
+                    <li><a href="./02_06_Instruction_Arithmetic.html#TOC_CAL7">CAL˜</a></li>
+                    <li><a href="./02_06_Instruction_Arithmetic.html#TOC_CAL8">CAL&gt;&gt;</a></li>
+                    <li><a href="./02_06_Instruction_Arithmetic.html#TOC_CAL9">CAL&lt;&lt;</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./02_07_Instruction_DataTransfer.html">数据传输</a></div>
+                  <ul>
+                    <li><a href="./02_07_Instruction_DataTransfer.html#TOC_MOV">MOV</a></li>
+                    <li><a href="./02_07_Instruction_DataTransfer.html#TOC_DW">DW</a></li>
+                    <li><a href="./02_07_Instruction_DataTransfer.html#TOC_BMOV">BMOV</a></li>
+                    <li><a href="./02_07_Instruction_DataTransfer.html#TOC_FMOV">FMOV</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./02_08_Instruction_DateAndTime.html">时间_日期时刻</a></div>
+                  <ul>
+                    <li><a href="./02_08_Instruction_DateAndTime.html#TOC_LDWK">LDWK</a></li>
+                    <li><a href="./02_08_Instruction_DateAndTime.html#TOC_ANDWK">ANDWK</a></li>
+                    <li><a href="./02_08_Instruction_DateAndTime.html#TOC_ORWK">ORWK</a></li>
+                    <li><a href="./02_08_Instruction_DateAndTime.html#TOC_LDWKB">LDWKB</a></li>
+                    <li><a href="./02_08_Instruction_DateAndTime.html#TOC_ANDWKB">ANDWKB</a></li>
+                    <li><a href="./02_08_Instruction_DateAndTime.html#TOC_ORWKB">ORWKB</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./02_09_Instruction_BufferMemory.html">缓冲存储器</a></div>
+                  <ul>
+                    <li><a href="./02_09_Instruction_BufferMemory.html#TOC_UREAD">UREAD</a></li>
+                    <li><a href="./02_09_Instruction_BufferMemory.html#TOC_UWRIT">UWRIT</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./02_10_Instruction_Flow.html">流程</a></div>
+                  <ul>
+                    <li><a href="./02_10_Instruction_Flow.html#TOC_MC">MC</a></li>
+                    <li><a href="./02_10_Instruction_Flow.html#TOC_MCR">MCR</a></li>
+                    <li><a href="./02_10_Instruction_Flow.html#TOC_CALL">CALL</a></li>
+                    <li><a href="./02_10_Instruction_Flow.html#TOC_SBN">SBN</a></li>
+                    <li><a href="./02_10_Instruction_Flow.html#TOC_RET">RET</a></li>
+                    <li><a href="./02_10_Instruction_Flow.html#TOC_FOR">FOR</a></li>
+                    <li><a href="./02_10_Instruction_Flow.html#TOC_NEXT">NEXT</a></li>
+                    <li><a href="./02_10_Instruction_Flow.html#TOC_BREAK">BREAK</a></li>
+                    <li><a href="./02_10_Instruction_Flow.html#TOC_CJ">CJ</a></li>
+                    <li><a href="./02_10_Instruction_Flow.html#TOC_NCJ">NCJ</a></li>
+                    <li><a href="./02_10_Instruction_Flow.html#TOC_GOTO">GOTO</a></li>
+                    <li><a href="./02_10_Instruction_Flow.html#TOC_LABEL">LABEL</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./02_11_Instruction_Sensor.html">传感器</a></div>
+                  <ul>
+                    <li><a href="./02_11_Instruction_Sensor.html#TOC_SPRD">SPRD</a></li>
+                    <li><a href="./02_11_Instruction_Sensor.html#TOC_SPWR">SPWR</a></li>
+                    <li><a href="./02_11_Instruction_Sensor.html#TOC_SSVC">SSVC</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./02_12_FunctionBlock.html">功能块</a></div>
+                  <ul>
+                    <li><a href="./02_12_FunctionBlock.html#TOC_FUN">FUN</a></li>
+                    <li><a href="./02_12_FunctionBlock.html#TOC_FBCALL">FBCALL</a></li>
+                    <li><a href="./02_12_FunctionBlock.html#TOC_FBEXEC">FBEXEC</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div><span class="toc_button"></span><a href="./03_00_FBFUN.html">第3章 FUN/FB</a></div>
+              <ul>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_01_FBFUN_ContactInOut.html">接点输入/输出</a></div>
+                  <ul>
+                    <li><a href="./03_01_FBFUN_ContactInOut.html#TOC_R_TRIG">R_TRIG</a></li>
+                    <li><a href="./03_01_FBFUN_ContactInOut.html#TOC_F_TRIG">F_TRIG</a></li>
+                    <li><a href="./03_01_FBFUN_ContactInOut.html#TOC_SR">SR</a></li>
+                    <li><a href="./03_01_FBFUN_ContactInOut.html#TOC_RS">RS</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_02_FBFUN_BitInOut.html">位输入/输出</a></div>
+                  <ul>
+                    <li><a href="./03_02_FBFUN_BitInOut.html#TOC_BitLoad">BitLoad</a></li>
+                    <li><a href="./03_02_FBFUN_BitInOut.html#TOC_BitSet">BitSet</a></li>
+                    <li><a href="./03_02_FBFUN_BitInOut.html#TOC_BitReset">BitReset</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_03_FBFUN_Comparison.html">比较</a></div>
+                  <ul>
+                    <li><a href="./03_03_FBFUN_Comparison.html#TOC_LT">LT</a></li>
+                    <li><a href="./03_03_FBFUN_Comparison.html#TOC_LE">LE</a></li>
+                    <li><a href="./03_03_FBFUN_Comparison.html#TOC_GT">GT</a></li>
+                    <li><a href="./03_03_FBFUN_Comparison.html#TOC_GE">GE</a></li>
+                    <li><a href="./03_03_FBFUN_Comparison.html#TOC_EQ">EQ</a></li>
+                    <li><a href="./03_03_FBFUN_Comparison.html#TOC_NE">NE</a></li>
+                    <li><a href="./03_03_FBFUN_Comparison.html#TOC_ZoneCmp">ZoneCmp</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_04_FBFUN_TimerCounter.html">定时器 计数器</a></div>
+                  <ul>
+                    <li><a href="./03_04_FBFUN_TimerCounter.html#TOC_TON">TON</a></li>
+                    <li><a href="./03_04_FBFUN_TimerCounter.html#TOC_TOF">TOF</a></li>
+                    <li><a href="./03_04_FBFUN_TimerCounter.html#TOC_TP">TP</a></li>
+                    <li><a href="./03_04_FBFUN_TimerCounter.html#TOC_UpDownTimer">UpDownTimer</a></li>
+                    <li><a href="./03_04_FBFUN_TimerCounter.html#TOC_CTU">CTU</a></li>
+                    <li><a href="./03_04_FBFUN_TimerCounter.html#TOC_CTU_DINT">CTU_DINT</a></li>
+                    <li><a href="./03_04_FBFUN_TimerCounter.html#TOC_CTU_UDINT">CTU_UDINT</a></li>
+                    <li><a href="./03_04_FBFUN_TimerCounter.html#TOC_CTD">CTD</a></li>
+                    <li><a href="./03_04_FBFUN_TimerCounter.html#TOC_CTD_DINT">CTD_DINT</a></li>
+                    <li><a href="./03_04_FBFUN_TimerCounter.html#TOC_CTD_UDINT">CTD_UDINT</a></li>
+                    <li><a href="./03_04_FBFUN_TimerCounter.html#TOC_CTUD">CTUD</a></li>
+                    <li><a href="./03_04_FBFUN_TimerCounter.html#TOC_CTUD_DINT">CTUD_DINT</a></li>
+                    <li><a href="./03_04_FBFUN_TimerCounter.html#TOC_CTUD_UDINT">CTUD_UDINT</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_05_FBFUN_Shift.html">移位</a></div>
+                  <ul>
+                    <li><a href="./03_05_FBFUN_Shift.html#TOC_SHL">SHL</a></li>
+                    <li><a href="./03_05_FBFUN_Shift.html#TOC_SHR">SHR</a></li>
+                    <li><a href="./03_05_FBFUN_Shift.html#TOC_ROL">ROL</a></li>
+                    <li><a href="./03_05_FBFUN_Shift.html#TOC_ROR">ROR</a></li>
+                    <li><a href="./03_05_FBFUN_Shift.html#TOC_AryShiftL">AryShiftL</a></li>
+                    <li><a href="./03_05_FBFUN_Shift.html#TOC_AryShiftR">AryShiftR</a></li>
+                    <li><a href="./03_05_FBFUN_Shift.html#TOC_ShiftRegister">ShiftRegister</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_06_FBFUN_LogicalOperation.html">逻辑运算</a></div>
+                  <ul>
+                    <li><a href="./03_06_FBFUN_LogicalOperation.html#TOC_NOT">NOT</a></li>
+                    <li><a href="./03_06_FBFUN_LogicalOperation.html#TOC_AND1">AND</a></li>
+                    <li><a href="./03_06_FBFUN_LogicalOperation.html#TOC_OR1">OR</a></li>
+                    <li><a href="./03_06_FBFUN_LogicalOperation.html#TOC_XOR">XOR</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_07_FBFUN_Arithmetic.html">算术</a></div>
+                  <ul>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_ADD">ADD</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_SUB">SUB</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_MUL">MUL</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_DIV">DIV</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_MOD">MOD</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_EXP">EXP</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_EXPT">EXPT</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_SQRT">SQRT</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_LN">LN</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_LOG">LOG</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_SIN">SIN</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_COS">COS</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_TAN">TAN</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_ASIN">ASIN</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_ACOS">ACOS</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_ATAN">ATAN</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_ATAN2">ATAN2</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_ABS">ABS</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_DegToRad">DegToRad</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_RadToDeg">RadToDeg</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_Inc">Inc</a></li>
+                    <li><a href="./03_07_FBFUN_Arithmetic.html#TOC_Dec">Dec</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_08_FBFUN_Selection.html">选择</a></div>
+                  <ul>
+                    <li><a href="./03_08_FBFUN_Selection.html#TOC_SEL">SEL</a></li>
+                    <li><a href="./03_08_FBFUN_Selection.html#TOC_MUX">MUX</a></li>
+                    <li><a href="./03_08_FBFUN_Selection.html#TOC_MAX">MAX</a></li>
+                    <li><a href="./03_08_FBFUN_Selection.html#TOC_MIN">MIN</a></li>
+                    <li><a href="./03_08_FBFUN_Selection.html#TOC_LIMIT">LIMIT</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_09_FBFUN_DataProcessing.html">数据处理</a></div>
+                  <ul>
+                    <li><a href="./03_09_FBFUN_DataProcessing.html#TOC_AryReset">AryReset</a></li>
+                    <li><a href="./03_09_FBFUN_DataProcessing.html#TOC_BitCount">BitCount</a></li>
+                    <li><a href="./03_09_FBFUN_DataProcessing.html#TOC_DataSearch">DataSearch</a></li>
+                    <li><a href="./03_09_FBFUN_DataProcessing.html#TOC_AryMax">AryMax</a></li>
+                    <li><a href="./03_09_FBFUN_DataProcessing.html#TOC_AryMin">AryMin</a></li>
+                    <li><a href="./03_09_FBFUN_DataProcessing.html#TOC_AryMean">AryMean</a></li>
+                    <li><a href="./03_09_FBFUN_DataProcessing.html#TOC_ArySum">ArySum</a></li>
+                    <li><a href="./03_09_FBFUN_DataProcessing.html#TOC_ByteSum">ByteSum</a></li>
+                    <li><a href="./03_09_FBFUN_DataProcessing.html#TOC_AryCRC">AryCRC</a></li>
+                    <li><a href="./03_09_FBFUN_DataProcessing.html#TOC_StructSort">StructSort</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_10_FBFUN_DataTransfer.html">数据传输</a></div>
+                  <ul>
+                    <li><a href="./03_10_FBFUN_DataTransfer.html#TOC_MOVE">MOVE</a></li>
+                    <li><a href="./03_10_FBFUN_DataTransfer.html#TOC_FillMove">FillMove</a></li>
+                    <li><a href="./03_10_FBFUN_DataTransfer.html#TOC_BlockMove">BlockMove</a></li>
+                    <li><a href="./03_10_FBFUN_DataTransfer.html#TOC_ByteBlockMove">ByteBlockMove</a></li>
+                    <li><a href="./03_10_FBFUN_DataTransfer.html#TOC_BitBlockMove">BitBlockMove</a></li>
+                    <li><a href="./03_10_FBFUN_DataTransfer.html#TOC_PartialMove">PartialMove</a></li>
+                    <li><a href="./03_10_FBFUN_DataTransfer.html#TOC_StructReset">StructReset</a></li>
+                    <li><a href="./03_10_FBFUN_DataTransfer.html#TOC_Exchange">Exchange</a></li>
+                    <li><a href="./03_10_FBFUN_DataTransfer.html#TOC_Clear">Clear</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_11_FBFUN_GetSize.html">获取大小</a></div>
+                  <ul>
+                    <li><a href="./03_11_FBFUN_GetSize.html#TOC_GetAryCount">GetAryCount</a></li>
+                    <li><a href="./03_11_FBFUN_GetSize.html#TOC_GetWordSize">GetWordSize</a></li>
+                    <li><a href="./03_11_FBFUN_GetSize.html#TOC_GetByteSize">GetByteSize</a></li>
+                    <li><a href="./03_11_FBFUN_GetSize.html#TOC_GetBitSize">GetBitSize</a></li>
+                    <li><a href="./03_11_FBFUN_GetSize.html#TOC_LOWER_BOUND">LOWER_BOUND</a></li>
+                    <li><a href="./03_11_FBFUN_GetSize.html#TOC_UPPER_BOUND">UPPER_BOUND</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_12_FBFUN_DataConversion.html">数据转换</a></div>
+                  <ul>
+                    <li><a href="./03_12_FBFUN_DataConversion.html#TOC_Decode">Decode</a></li>
+                    <li><a href="./03_12_FBFUN_DataConversion.html#TOC_Encode">Encode</a></li>
+                    <li><a href="./03_12_FBFUN_DataConversion.html#TOC_BinToGrayCode">BinToGrayCode</a></li>
+                    <li><a href="./03_12_FBFUN_DataConversion.html#TOC_GrayCodeToBin">GrayCodeToBin</a></li>
+                    <li><a href="./03_12_FBFUN_DataConversion.html#TOC_DisperseNibble">DisperseNibble</a></li>
+                    <li><a href="./03_12_FBFUN_DataConversion.html#TOC_UniteNibble">UniteNibble</a></li>
+                    <li><a href="./03_12_FBFUN_DataConversion.html#TOC_DisperseByte">DisperseByte</a></li>
+                    <li><a href="./03_12_FBFUN_DataConversion.html#TOC_UniteByte">UniteByte</a></li>
+                    <li><a href="./03_12_FBFUN_DataConversion.html#TOC_BlockSwap">BlockSwap</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_13_FBFUN_DataControl.html">数据控制</a></div>
+                  <ul>
+                    <li><a href="./03_13_FBFUN_DataControl.html#TOC_ApproxCal">ApproxCal</a></li>
+                    <li><a href="./03_13_FBFUN_DataControl.html#TOC_Ramp">Ramp</a></li>
+                    <li><a href="./03_13_FBFUN_DataControl.html#TOC_TimeProportionalOut">TimeProportionalOut</a></li>
+                    <li><a href="./03_13_FBFUN_DataControl.html#TOC_LeadLagFilter">LeadLagFilter</a></li>
+                    <li><a href="./03_13_FBFUN_DataControl.html#TOC_PID">PID</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_14_FBFUN_Table.html">表</a></div>
+                  <ul>
+                    <li><a href="./03_14_FBFUN_Table.html#TOC_FIFOWrite">FIFOWrite</a></li>
+                    <li><a href="./03_14_FBFUN_Table.html#TOC_FIFORead">FIFORead</a></li>
+                    <li><a href="./03_14_FBFUN_Table.html#TOC_FIFOInsert">FIFOInsert</a></li>
+                    <li><a href="./03_14_FBFUN_Table.html#TOC_FIFODelete">FIFODelete</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_15_FBFUN_CharacterConversion.html">字符转换</a></div>
+                  <ul>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_BinaryToAscii">BinaryToAscii</a></li>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_AsciiToBinary">AsciiToBinary</a></li>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_AsciiToString">AsciiToString</a></li>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_NumToDecString">NumToDecString</a></li>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_DecStringToNum">DecStringToNum</a></li>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_NumToHexString">NumToHexString</a></li>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_HexStringToNum">HexStringToNum</a></li>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_RealToString">RealToString</a></li>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_StringToReal">StringToReal</a></li>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_LrealToString">LrealToString</a></li>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_StringToLreal">StringToLreal</a></li>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_VariableToString">VariableToString</a></li>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_StringToVariable">StringToVariable</a></li>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_CipStringToString">CipStringToString</a></li>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_StringToCipString">StringToCipString</a></li>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_UTF16CodeToString">UTF16CodeToString</a></li>
+                    <li><a href="./03_15_FBFUN_CharacterConversion.html#TOC_StringToUTF16Code">StringToUTF16Code</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_16_FBFUN_CharacterProcessing.html">字符处理</a></div>
+                  <ul>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_LEN">LEN</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_LEFT">LEFT</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_RIGHT">RIGHT</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_MID">MID</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_CONCAT">CONCAT</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_INSERT">INSERT</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_DELETE">DELETE</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_REPLACE">REPLACE</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_FIND">FIND</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_StringSearch">StringSearch</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_StringCmp">StringCmp</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_StringMove">StringMove</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_TrimL">TrimL</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_TrimR">TrimR</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_Trim">Trim</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_DisperseString">DisperseString</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_UniteString">UniteString</a></li>
+                    <li><a href="./03_16_FBFUN_CharacterProcessing.html#TOC_SplitN">SplitN</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_17_FBFUN_DateAndTime.html">时间/日期时刻处理</a></div>
+                  <ul>
+                    <li><a href="./03_17_FBFUN_DateAndTime.html#TOC_WriteCalendarTime">WriteCalendarTime</a></li>
+                    <li><a href="./03_17_FBFUN_DateAndTime.html#TOC_DtToSec">DtToSec</a></li>
+                    <li><a href="./03_17_FBFUN_DateAndTime.html#TOC_SecToDt">SecToDt</a></li>
+                    <li><a href="./03_17_FBFUN_DateAndTime.html#TOC_ADD_TIME">ADD_TIME</a></li>
+                    <li><a href="./03_17_FBFUN_DateAndTime.html#TOC_SUB_TIME">SUB_TIME</a></li>
+                    <li><a href="./03_17_FBFUN_DateAndTime.html#TOC_MUL_TIME">MUL_TIME</a></li>
+                    <li><a href="./03_17_FBFUN_DateAndTime.html#TOC_DIV_TIME">DIV_TIME</a></li>
+                    <li><a href="./03_17_FBFUN_DateAndTime.html#TOC_GetDayOfWeek">GetDayOfWeek</a></li>
+                    <li><a href="./03_17_FBFUN_DateAndTime.html#TOC_TimeToMicroSec">TimeToMicroSec</a></li>
+                    <li><a href="./03_17_FBFUN_DateAndTime.html#TOC_TimeToMilliSec">TimeToMilliSec</a></li>
+                    <li><a href="./03_17_FBFUN_DateAndTime.html#TOC_TimeToSec">TimeToSec</a></li>
+                    <li><a href="./03_17_FBFUN_DateAndTime.html#TOC_MicroSecToTime">MicroSecToTime</a></li>
+                    <li><a href="./03_17_FBFUN_DateAndTime.html#TOC_MilliSecToTime">MilliSecToTime</a></li>
+                    <li><a href="./03_17_FBFUN_DateAndTime.html#TOC_SecToTime">SecToTime</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_18_FBFUN_DataTypeConversion.html">数据类型转换</a></div>
+                  <ul>
+                    <li><a href="./03_18_FBFUN_DataTypeConversion.html#TOC__TO">*_TO_**</a></li>
+                    <li><a href="./03_18_FBFUN_DataTypeConversion.html#TOC_TO">TO_**</a></li>
+                    <li><a href="./03_18_FBFUN_DataTypeConversion.html#TOC_TRUNC">TRUNC_**</a></li>
+                    <li><a href="./03_18_FBFUN_DataTypeConversion.html#TOC_TO_BCD">TO_BCD_**</a></li>
+                    <li><a href="./03_18_FBFUN_DataTypeConversion.html#TOC_BCD_TO">BCD_TO_**</a></li>
+                    <li><a href="./03_18_FBFUN_DataTypeConversion.html#TOC_IS_VALID">IS_VALID</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_19_FBFUN_Storage.html">存储</a></div>
+                  <ul>
+                    <li><a href="./03_19_FBFUN_Storage.html#TOC_StorageWriteBin">StorageWriteBin</a></li>
+                    <li><a href="./03_19_FBFUN_Storage.html#TOC_StorageReadBin">StorageReadBin</a></li>
+                    <li><a href="./03_19_FBFUN_Storage.html#TOC_StorageReadLine">StorageReadLine</a></li>
+                    <li><a href="./03_19_FBFUN_Storage.html#TOC_StoragePrint">StoragePrint</a></li>
+                    <li><a href="./03_19_FBFUN_Storage.html#TOC_StorageDeleteFile">StorageDeleteFile</a></li>
+                    <li><a href="./03_19_FBFUN_Storage.html#TOC_StorageMakeDir">StorageMakeDir</a></li>
+                    <li><a href="./03_19_FBFUN_Storage.html#TOC_StorageRemoveDir">StorageRemoveDir</a></li>
+                    <li><a href="./03_19_FBFUN_Storage.html#TOC_StorageCopy">StorageCopy</a></li>
+                    <li><a href="./03_19_FBFUN_Storage.html#TOC_StorageMove">StorageMove</a></li>
+                    <li><a href="./03_19_FBFUN_Storage.html#TOC_StorageRename">StorageRename</a></li>
+                    <li><a href="./03_19_FBFUN_Storage.html#TOC_StorageGetCapacity">StorageGetCapacity</a></li>
+                    <li><a href="./03_19_FBFUN_Storage.html#TOC_StorageGetStatus">StorageGetStatus</a></li>
+                    <li><a href="./03_19_FBFUN_Storage.html#TOC_StorageGetFileList">StorageGetFileList</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_20_FBFUN_SocketCommunication.html">套接字通信</a></div>
+                  <ul>
+                    <li><a href="./03_20_FBFUN_SocketCommunication.html#TOC_SocketTCP_ActiveOpen">SocketTCP_ActiveOpen</a></li>
+                    <li><a href="./03_20_FBFUN_SocketCommunication.html#TOC_SocketTCP_PassiveOpen">SocketTCP_PassiveOpen</a></li>
+                    <li><a href="./03_20_FBFUN_SocketCommunication.html#TOC_SocketTCP_Send">SocketTCP_Send</a></li>
+                    <li><a href="./03_20_FBFUN_SocketCommunication.html#TOC_SocketTCP_Recv">SocketTCP_Recv</a></li>
+                    <li><a href="./03_20_FBFUN_SocketCommunication.html#TOC_SocketTCP_RecvDelimiter">SocketTCP_RecvDelimiter</a></li>
+                    <li><a href="./03_20_FBFUN_SocketCommunication.html#TOC_SocketUDP_Open">SocketUDP_Open</a></li>
+                    <li><a href="./03_20_FBFUN_SocketCommunication.html#TOC_SocketUDP_Send">SocketUDP_Send</a></li>
+                    <li><a href="./03_20_FBFUN_SocketCommunication.html#TOC_SocketUDP_Recv">SocketUDP_Recv</a></li>
+                    <li><a href="./03_20_FBFUN_SocketCommunication.html#TOC_SocketClearRecvBuf">SocketClearRecvBuf</a></li>
+                    <li><a href="./03_20_FBFUN_SocketCommunication.html#TOC_SocketClose">SocketClose</a></li>
+                    <li><a href="./03_20_FBFUN_SocketCommunication.html#TOC_Ping">Ping</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_21_FBFUN_BufferMemory.html">缓冲存储器</a></div>
+                  <ul>
+                    <li><a href="./03_21_FBFUN_BufferMemory.html#TOC_UnitBufMemBlockRead">UnitBufMemBlockRead</a></li>
+                    <li><a href="./03_21_FBFUN_BufferMemory.html#TOC_UnitBufMemBlockWrite">UnitBufMemBlockWrite</a></li>
+                    <li><a href="./03_21_FBFUN_BufferMemory.html#TOC_UnitBufMemFill">UnitBufMemFill</a></li>
+                    <li><a href="./03_21_FBFUN_BufferMemory.html#TOC_UnitBufMemRead">UnitBufMemRead</a></li>
+                    <li><a href="./03_21_FBFUN_BufferMemory.html#TOC_UnitBufMemWrite">UnitBufMemWrite</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_22_FBFUN_Refresh.html">刷新</a></div>
+                  <ul>
+                    <li><a href="./03_22_FBFUN_Refresh.html#TOC_RefreshFreerunCounter">RefreshFreerunCounter</a></li>
+                    <li><a href="./03_22_FBFUN_Refresh.html#TOC_RefreshX">RefreshX</a></li>
+                    <li><a href="./03_22_FBFUN_Refresh.html#TOC_RefreshY">RefreshY</a></li>
+                    <li><a href="./03_22_FBFUN_Refresh.html#TOC_RefreshCyclicInput">RefreshCyclicInput</a></li>
+                    <li><a href="./03_22_FBFUN_Refresh.html#TOC_RefreshCyclicOutput">RefreshCyclicOutput</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_23_FBFUN_ModuleExecution.html">执行模块</a></div>
+                  <ul>
+                    <li><a href="./03_23_FBFUN_ModuleExecution.html#TOC_ModuleStart">ModuleStart</a></li>
+                    <li><a href="./03_23_FBFUN_ModuleExecution.html#TOC_ModuleStop">ModuleStop</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_24_FBFUN_DeviceAddress.html">软元件地址</a></div>
+                  <ul>
+                    <li><a href="./03_24_FBFUN_DeviceAddress.html#TOC_DevAddressGet">DevAddressGet</a></li>
+                    <li><a href="./03_24_FBFUN_DeviceAddress.html#TOC_DevAddressInc">DevAddressInc</a></li>
+                    <li><a href="./03_24_FBFUN_DeviceAddress.html#TOC_DevAddressDec">DevAddressDec</a></li>
+                    <li><a href="./03_24_FBFUN_DeviceAddress.html#TOC_DevAddressAdd">DevAddressAdd</a></li>
+                    <li><a href="./03_24_FBFUN_DeviceAddress.html#TOC_DevAddressSub">DevAddressSub</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_25_FBFUN_Interrupt.html">中断</a></div>
+                  <ul>
+                    <li><a href="./03_25_FBFUN_Interrupt.html#TOC_EnableInterrupt">EnableInterrupt</a></li>
+                    <li><a href="./03_25_FBFUN_Interrupt.html#TOC_DisableInterrupt">DisableInterrupt</a></li>
+                    <li><a href="./03_25_FBFUN_Interrupt.html#TOC_DisableInterruptRange">DisableInterruptRange</a></li>
+                    <li><a href="./03_25_FBFUN_Interrupt.html#TOC_SetInputInterruptConditio">SetInputInterruptCondition</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_26_FBFUN_Logging.html">日志</a></div>
+                  <ul>
+                    <li><a href="./03_26_FBFUN_Logging.html#TOC_LoggingEnable">LoggingEnable</a></li>
+                    <li><a href="./03_26_FBFUN_Logging.html#TOC_LoggingDisable">LoggingDisable</a></li>
+                    <li><a href="./03_26_FBFUN_Logging.html#TOC_LoggingTrigger">LoggingTrigger</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_27_FBFUN_OperationRecord.html">运转记录</a></div>
+                  <ul>
+                    <li><a href="./03_27_FBFUN_OperationRecord.html#TOC_OperationRecordCapture">OperationRecordCapture</a></li>
+                    <li><a href="./03_27_FBFUN_OperationRecord.html#TOC_OperationRecordSave">OperationRecordSave</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_28_FBFUN_VariableAccess.html">访问变量</a></div>
+                  <ul>
+                    <li><a href="./03_28_FBFUN_VariableAccess.html#TOC_DevInfoGet">DevInfoGet</a></li>
+                    <li><a href="./03_28_FBFUN_VariableAccess.html#TOC_DevInfoRead">DevInfoRead</a></li>
+                    <li><a href="./03_28_FBFUN_VariableAccess.html#TOC_DevInfoWrite">DevInfoWrite</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_29_FBFUN_UnitProgram.html">单元程序</a></div>
+                  <ul>
+                    <li><a href="./03_29_FBFUN_UnitProgram.html#TOC_UPStart">UPStart</a></li>
+                    <li><a href="./03_29_FBFUN_UnitProgram.html#TOC_UPStop">UPStop</a></li>
+                    <li><a href="./03_29_FBFUN_UnitProgram.html#TOC_UFSuspend">UFSuspend</a></li>
+                    <li><a href="./03_29_FBFUN_UnitProgram.html#TOC_UFResume">UFResume</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_30_FBFUN_UnitOnly.html">单元专用</a></div>
+                  <ul>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_ReadBuf">U_ReadBuf</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_DisableOverCP">U_DisableOverCP</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_DisableOverVP">U_DisableOverVP</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_SockOpen">U_SockOpen</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_SockWriteBuf">U_SockWriteBuf</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_SockReadBuf">U_SockReadBuf</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_SockStatus">U_SockStatus</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_SockNonProcRecvSetting">U_SockNonProcRecvSetting</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_SockUDPTo">U_SockUDPTo</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_SockSelectPort">U_SockSelectPort</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_MailToGroup">U_MailToGroup</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_MailTo">U_MailTo</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_MailSubject">U_MailSubject</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_MailText">U_MailText</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_MailAttach">U_MailAttach</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_MailStatus">U_MailStatus</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_FTPClientStatus">U_FTPClientStatus</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_MsgTo">U_MsgTo</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_MsgSend">U_MsgSend</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_MsgRecv">U_MsgRecv</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_MsgStatus">U_MsgStatus</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_CyclicStop">U_CyclicStop</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_CyclicStart">U_CyclicStart</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_CyclicReadRegister">U_CyclicReadRegister</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_CyclicReadErr">U_CyclicReadErr</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PSReadBuf">U_PSReadBuf</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_CntReadCounter">U_CntReadCounter</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_CntReadHz">U_CntReadHz</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_CntReadRPM">U_CntReadRPM</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_CntReadInputCapture0">U_CntReadInputCapture0</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_CntReadInputCapture1">U_CntReadInputCapture1</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_CntWriteCounter">U_CntWriteCounter</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_CntWriteCTC0">U_CntWriteCTC0</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_CntWriteCTC1">U_CntWriteCTC1</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_CntWritePreset">U_CntWritePreset</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_ADRead">U_ADRead</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_ADReadBlock">U_ADReadBlock</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_ADWriteOffset">U_ADWriteOffset</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_ADWriteAverage">U_ADWriteAverage</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_ADWriteScaling">U_ADWriteScaling</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_ADWriteCmpLimit">U_ADWriteCmpLimit</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_DAWrite">U_DAWrite</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_DAWriteOffset">U_DAWriteOffset</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_DAWriteScaling">U_DAWriteScaling</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_DAWriteUpperLowerLimit">U_DAWriteUpperLowerLimit</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosWritePointNo">U_PosWritePointNo</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosReadCurrentPointNo">U_PosReadCurrentPointNo</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosReadMCode">U_PosReadMCode</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosReadActPos">U_PosReadActPos</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosReadActVel">U_PosReadActVel</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosReadFeedbackTrq">U_PosReadFeedbackTrq</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosReadCmdPos">U_PosReadCmdPos</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosReadCmdVel">U_PosReadCmdVel</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosWriteChgPos">U_PosWriteChgPos</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosWriteChgTargetPos">U_PosWriteChgTargetPos</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosWriteChgTargetVel">U_PosWriteChgTargetVel</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosWriteChgVel">U_PosWriteChgVel</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosWriteOverride">U_PosWriteOverride</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosReadCtrlMode">U_PosReadCtrlMode</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosWriteCtrlMode">U_PosWriteCtrlMode</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosWriteVelCtrlCmdVel">U_PosWriteVelCtrlCmdVel</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosWriteVelCtrlTrqLimit">U_PosWriteVelCtrlTrqLimit</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosWriteTrqCtrlCmdTrq">U_PosWriteTrqCtrlCmdTrq</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosWriteTrqCtrlVelLimit">U_PosWriteTrqCtrlVelLimit</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U_PosReadAxisErrCode">U_PosReadAxisErrCode</a></li>
+                    <li><a href="./03_30_FBFUN_UnitOnly.html#TOC_U">U_PosWriteSelectSpecialFunc</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_31_FBFUN_UnitTypeDetamination.html">单元类型判定</a></div>
+                  <ul>
+                    <li><a href="./03_31_FBFUN_UnitTypeDetamination.html#TOC_IS">IS_***</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_32_FBFUN_Motion.html">运动</a></div>
+                  <ul>
+                    <li><a href="./03_32_FBFUN_Motion.html#TOC_运动控制指令列表">运动控制指令列表</a></li>
+                    <li><a href="./03_32_FBFUN_Motion.html#TOC_通用自变量">通用自变量</a></li>
+                    <li><a href="./03_32_FBFUN_Motion.html#TOC_缓冲">缓冲</a></li>
+                    <li><a href="./03_32_FBFUN_Motion.html#TOC_TransitionMode">TransitionMode</a></li>
+                    <li><a href="./03_32_FBFUN_Motion.html#TOC_切换控制模式">切换控制模式</a></li>
+                    <li><a href="./03_32_FBFUN_Motion.html#TOC_同时执行多个运动控制指令">同时执行多个运动控制指令</a></li>
+                    <li><a href="./03_32_FBFUN_Motion.html#TOC_运动控制指令的注意事项">运动控制指令的注意事项</a></li>
+                    <li><a href="./03_32_FBFUN_Motion.html#TOC_各指令的动作说明通用事项">各指令的动作说明通用事项</a></li>
+                    <li>
+                      <div><span class="toc_button"></span><a href="./03_32_FBFUN_Motion.html#TOC_通用控制FB">通用控制FB</a></div>
+                      <ul>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_OperationEnable">MC_OperationEnable</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_ImmediateStopAll">MC_ImmediateStopAll</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_SaveParameter">MC_SaveParameter</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC1">MC_UpdateSyncContactParameter</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC2">MC_SetSyncExternalReference</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_RefreshMotionVariable">MC_RefreshMotionVariable</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_CamRead">MC_CamRead</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_CamWrite">MC_CamWrite</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_CamGenerate">MC_CamGenerate</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_ClearMaxCycleTime">MC_ClearMaxCycleTime</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div><span class="toc_button"></span><a href="./03_32_FBFUN_Motion.html#TOC_轴控制FB">轴控制FB</a></div>
+                      <ul>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_Power">MC_Power</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_Reset">MC_Reset</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_Home">MC_Home</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_Stop">MC_Stop</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_ImmediateStop">MC_ImmediateStop</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_Jog">MC_Jog</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_SetPosition">MC_SetPosition</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_SetOverride">MC_SetOverride</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_MoveAbsolute">MC_MoveAbsolute</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_MoveRelative">MC_MoveRelative</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_MoveVelocity">MC_MoveVelocity</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_TorqueControl">MC_TorqueControl</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_VelocityControl">MC_VelocityControl</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_InternalStopSensor">MC_InternalStopSensor</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_MaskStopSensor">MC_MaskStopSensor</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_InternalHomeSensor">MC_InternalHomeSensor</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_SetTorqueLimit">MC_SetTorqueLimit</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_SetVelocityFeedforward">MC_SetVelocityFeedforward</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_SetTorqueFeedforward">MC_SetTorqueFeedforward</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_MoveToBasePosition">MC_MoveToBasePosition</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_FastMoveToHome">MC_FastMoveToHome</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_MoveToPoint">MC_MoveToPoint</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_ChangeTargetPosition">MC_ChangeTargetPosition</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC3">MC_ChangeTargetGroupPositions</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_ChangeTargetVelocity">MC_ChangeTargetVelocity</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_ResumePositioning">MC_ResumePositioning</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_MoveToNextPoint">MC_MoveToNextPoint</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_SuspendNextPositioning">MC_SuspendNextPositioning</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_StopAtTargetPosition">MC_StopAtTargetPosition</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_MCodeOff">MC_MCodeOff</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_ReleaseStandby">MC_ReleaseStandby</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_Teach">MC_Teach</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC4">MC_AbsolutePosFollowUpControl</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC5">MC_SyncTypeFollowUpControl</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_SyncControl">MC_SyncControl</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_MainClutch">MC_MainClutch</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_AuxClutch">MC_AuxClutch</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_SwitchCam">MC_SwitchCam</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_TorqueLimitClutch">MC_TorqueLimitClutch</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_StopSimMechanicalSync">MC_StopSimMechanicalSync</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_MainAxisPhasing">MC_MainAxisPhasing</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_AuxAxisPhasing">MC_AuxAxisPhasing</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div><span class="toc_button"></span><a href="./03_32_FBFUN_Motion.html#TOC_轴群组控制FB">轴群组控制FB</a></div>
+                      <ul>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_GroupStop">MC_GroupStop</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_MoveLinearAbsolute">MC_MoveLinearAbsolute</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_MoveLinearRelative">MC_MoveLinearRelative</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_MoveCircularAbsolute">MC_MoveCircularAbsolute</a></li>
+                        <li><a href="./03_32_FBFUN_Motion.html#TOC_MC_MoveCircularRelative">MC_MoveCircularRelative</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="./03_32_FBFUN_Motion.html#TOC_错误代码">错误代码</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./03_33_FBFUN_EtherCAT.html">EtherCAT</a></div>
+                  <ul>
+                    <li><a href="./03_33_FBFUN_EtherCAT.html#TOC_EC_CoE_SDORead">EC_CoE_SDORead</a></li>
+                    <li><a href="./03_33_FBFUN_EtherCAT.html#TOC_EC_CoE_SDOWrite">EC_CoE_SDOWrite</a></li>
+                    <li><a href="./03_33_FBFUN_EtherCAT.html#TOC_EC_CoE_PDOStop">EC_CoE_PDOStop</a></li>
+                    <li><a href="./03_33_FBFUN_EtherCAT.html#TOC_EC_CoE_PDORestart">EC_CoE_PDORestart</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div><span class="toc_button"></span><a href="./04_00_ST-1.html">第4章 ST语法</a></div>
+              <ul>
+                <li>
+                  <div><span class="toc_button"></span><a href="./04_00_ST-2.html">赋值语句</a></div>
+                  <ul>
+                    <li><a href="./04_00_ST-2.html#TOC_赋值语句的用法">赋值语句的用法</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./04_00_ST-3.html">运算符</a></div>
+                  <ul>
+                    <li><a href="./04_00_ST-3.html#TOC_运算符一览">运算符一览</a></li>
+                    <li><a href="./04_00_ST-3.html#TOC_关于优先顺序">关于优先顺序</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./04_00_ST-4.html">控制语句</a></div>
+                  <ul>
+                    <li><a href="./04_00_ST-4.html#TOC_控制语句一览">控制语句一览</a></li>
+                    <li><a href="./04_00_ST-4.html#TOC_IF_语句_条件分支_1">IF ～ 语句(条件分支 1)</a></li>
+                    <li><a href="./04_00_ST-4.html#TOC_IF_ELSE_语句_条件分支_2">IF ～ ELSE 语句(条件分支 2)</a></li>
+                    <li><a href="./04_00_ST-4.html#TOC_IF_ELSIF_语句_条件分支_3">IF ～ ELSIF ～ 语句(条件分支 3)</a></li>
+                    <li><a href="./04_00_ST-4.html#TOC_CASE_语句_多分支控制">CASE ～ 语句(多分支控制)</a></li>
+                    <li><a href="./04_00_ST-4.html#TOC_FOR_END_FOR_语句_指定次数的循环控制">FOR ～ END_FOR 语句（指定次数的循环控制）</a></li>
+                    <li><a href="./04_00_ST-4.html#TOC_WHILE_语句_前判定循环控制">WHILE 语句（前判定循环控制）</a></li>
+                    <li><a href="./04_00_ST-4.html#TOC_REPEAT_语句_后判定循环控制">REPEAT 语句（后判定循环控制）</a></li>
+                    <li><a href="./04_00_ST-4.html#TOC_EXIT_处理">EXIT 处理</a></li>
+                    <li><a href="./04_00_ST-4.html#TOC_CONTINUE_处理">CONTINUE 处理</a></li>
+                    <li><a href="./04_00_ST-4.html#TOC_RETURN_处理">RETURN 处理</a></li>
+                    <li><a href="./04_00_ST-4.html#TOC_使用控制语句时的注意事项">使用控制语句时的注意事项</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div><span class="toc_button"></span><a href="./99_00_Appendix-1.html">附录</a></div>
+              <ul>
+                <li>
+                  <div><span class="toc_button"></span><a href="./99_00_Appendix-2.html">处理时间的参考</a></div>
+                  <ul>
+                    <li><a href="./99_00_Appendix-2.html#TOC_程序执行时间的参考值">程序执行时间的参考值</a></li>
+                    <li><a href="./99_00_Appendix-2.html#TOC_缩短执行时间">缩短执行时间</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div><span class="toc_button"></span><a href="./99_00_Appendix-3.html">示例程序</a></div>
+                  <ul>
+                    <li>
+                      <div><span class="toc_button"></span><a href="./99_00_Appendix-4.html">梯形图程序</a></div>
+                      <ul>
+                        <li><a href="./99_00_Appendix-4.html#TOC_通电延时定时器">通电延时定时器</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_数组的移位">数组的移位</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_三角函数_SIN_COS_TAN">三角函数（SIN/COS/TAN）</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_反三角函数_ASIN_ACOS_ATAN">反三角函数（ASIN/ACOS/ATAN）</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_数据的排序">数据的排序</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_计算平均值_数据类型转换">计算平均值（数据类型转换）</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_FIFO">FIFO</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_将二进制数据写入CSV">将二进制数据写入CSV</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_将字符串写入CSV">将字符串写入CSV</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_获取文件夹内的文件列表">获取文件夹内的文件列表</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_TCP套接字通信">TCP套接字通信</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_UDP套接字通信">UDP套接字通信</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_通过Ping进行连接确认">通过Ping进行连接确认</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_缓冲存储器的读写_多个数据">缓冲存储器的读写（多个数据）</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_缓冲存储器的读写_单个数据">缓冲存储器的读写（单个数据）</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_2点间的时间测量">2点间的时间测量</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_禁止中断_指定范围">禁止中断（指定范围）</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_获取固定周期_单元间同步_中断时的日志数据">获取固定周期/单元间同步/中断时的日志数据</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_获取固定周期_单元间同步_中断时的运行记录数据">获取固定周期/单元间同步/中断时的运行记录数据</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_保存运行记录">保存运行记录</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_程序资产化">程序资产化</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_单轴控制">单轴控制</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_动作允许和伺服开启">动作允许和伺服开启</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_清除错误">清除错误</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_JOG">JOG</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_原点复归">原点复归</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_原点复归_原点传感器请求">原点复归/原点传感器请求</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_原点复归_基本位置移动">原点复归/基本位置移动</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_高速原点移动">高速原点移动</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_连续定位">连续定位</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_连续定位_缓冲模式">连续定位（缓冲模式）</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_运行中更改参数">运行中更改参数</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_定位和减速停止_重新开始运行_点参数">定位和减速停止/重新开始运行（点参数）</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_连续运行的待机与解除_点参数">连续运行的待机与解除（点参数）</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_运行中更改参数_点参数">运行中更改参数（点参数）</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_直线插补">直线插补</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_圆弧插补">圆弧插补</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_速度控制_转矩控制">速度控制/转矩控制</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_同步控制">同步控制</a></li>
+                        <li><a href="./99_00_Appendix-4.html#TOC_离合器">离合器</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div><span class="toc_button"></span><a href="./99_00_Appendix-5.html">ST</a></div>
+                      <ul>
+                        <li><a href="./99_00_Appendix-5.html#TOC_检测上升沿_下降沿">检测上升沿/下降沿</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_通电延时定时器1">通电延时定时器</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_数组的移位1">数组的移位</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_三角函数_SIN_COS_TAN1">三角函数（SIN/COS/TAN）</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_反三角函数_ASIN_ACOS_ATAN1">反三角函数（ASIN/ACOS/ATAN）</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_数据的排序1">数据的排序</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_计算合计值">计算合计值</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_FIFO1">FIFO</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_创建时间戳">创建时间戳</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_计算平均值_数据类型转换1">计算平均值（数据类型转换）</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_将二进制数据写入CSV1">将二进制数据写入CSV</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_将字符串写入CSV1">将字符串写入CSV</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_获取文件夹内的文件列表1">获取文件夹内的文件列表</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_TCP套接字通信1">TCP套接字通信</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_UDP套接字通信1">UDP套接字通信</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_通过Ping进行连接确认1">通过Ping进行连接确认</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_缓冲存储器的读写_多个数据1">缓冲存储器的读写（多个数据）</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_缓冲存储器的读写_单个数据1">缓冲存储器的读写（单个数据）</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_2点间的时间测量1">2点间的时间测量</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_间接指定软元件">间接指定软元件</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_根据条件进行分支处理">根据条件进行分支处理</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_单轴控制1">单轴控制</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_动作允许和伺服开启1">动作允许和伺服开启</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_清除错误1">清除错误</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_JOG1">JOG</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_原点复归1">原点复归</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_原点复归_原点传感器请求1">原点复归/原点传感器请求</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_原点复归_基本位置移动1">原点复归/基本位置移动</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_高速原点移动1">高速原点移动</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_连续定位1">连续定位</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_连续定位_缓冲模式1">连续定位（缓冲模式）</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_运行中更改参数1">运行中更改参数</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_定位和减速停止_重新开始运行_点参数1">定位和减速停止/重新开始运行（点参数）</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_连续运行的待机与解除_点参数1">连续运行的待机与解除（点参数）</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_运行中更改参数_点参数1">运行中更改参数（点参数）</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_直线插补1">直线插补</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_圆弧插补1">圆弧插补</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_速度控制_转矩控制1">速度控制/转矩控制</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_同步控制1">同步控制</a></li>
+                        <li><a href="./99_00_Appendix-5.html#TOC_离合器1">离合器</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="contents">
+        <div id="top">
+          <div dir="ltr">
+            <p dir="ltr" class="FM_01_02_HL2"><a id="XREF_19110"></a>控制语句</p>
+            <p dir="ltr" class="FM_02_01_Body">控制语句是用来改变程序流程的，根据条件使处理流程分支，循环执行，改变执行的筛选和次数。</p>
+            <p dir="ltr" class="FM_01_03_HL3" id="TOC_控制语句一览">控制语句一览</p>
+            <p dir="ltr" class="FM_02_01_Body">控制语句分为以下所示的“条件分支语句”和“回圈控制语句”、“程式执行结束语句”,共三种。</p>
+            <p dir="ltr" class="FM_01_05_HL5"><span class="FM_C00_DotDash">▌</span>条件分支语句</p>
+            <p dir="ltr" class="FM_02_01_Body">条件分支语句按照指定条件对处理流程进行分支。</p>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T07_NomalTable_WidthFit_TH1" style="max-width: 100% ;height: auto">
+                <tr class="tr4">
+                  <td class="td51">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">控制语句</p>
+                  </td>
+                  <td class="td205" colspan="2">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">控制内容</p>
+                  </td>
+                </tr>
+                <tr class="tr4">
+                  <td class="td51" rowspan="6">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">IF 语句</p>
+                  </td>
+                  <td class="td205" colspan="2">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">（1） 根据条件式执行处理的分支控制语句</p>
+                  </td>
+                </tr>
+                <tr class="tr206">
+                  <td class="td159">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">IF<img alt="BlankMark.svg" id="image1145" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />条件式A<img alt="BlankMark.svg" id="image1146" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />THEN</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　处理语句 B;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">END_IF;</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">条件式 A 成立时，</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">执行处理语句 B。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">条件式 A  不成立时，不作任何处理。</p>
+                  </td>
+                </tr>
+                <tr class="tr4">
+                  <td class="td205" colspan="2">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">（2）根据条件式执行单独处理的2分支控制</p>
+                  </td>
+                </tr>
+                <tr class="tr207">
+                  <td class="td159">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">IF<img alt="BlankMark.svg" id="image1147" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />条件式A<img alt="BlankMark.svg" id="image1148" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />THEN</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　处理语句 B;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">ELSE</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　处理语句 C;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">END_IF;</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">条件式 A 成立时，</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">执行处理语句 B。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">条件式 A 不成立时，</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">执行处理语句 C。</p>
+                  </td>
+                </tr>
+                <tr class="tr4">
+                  <td class="td205" colspan="2">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">（3）根据条件值分别进行处理的多分支控制语句</p>
+                  </td>
+                </tr>
+                <tr class="tr208">
+                  <td class="td159">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">IF<img alt="BlankMark.svg" id="image1149" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />条件式A<img alt="BlankMark.svg" id="image1150" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />THEN</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　处理语句 B;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">ELSIF<img alt="BlankMark.svg" id="image1151" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />条件式C<img alt="BlankMark.svg" id="image1152" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />THEN</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　处理语句 D;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　<span>・</span></p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　<span>・</span></p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　<span>・</span></p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">END_IF;</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">条件式 A 成立时，</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">执行处理语句 B。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">条件式 A 不成立而条件式 C 成立时，</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">执行处理语句D。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_"> </p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_"> </p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_"> </p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">条件式A、C……都不成立时，不作任何处理。</p>
+                  </td>
+                </tr>
+                <tr class="tr4">
+                  <td class="td51" rowspan="2">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">CASE 语句</p>
+                  </td>
+                  <td class="td205" colspan="2">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">根据条件值选择对应的处理并执行的多分支控制语句</p>
+                  </td>
+                </tr>
+                <tr class="tr209">
+                  <td class="td159">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">CASE<img alt="BlankMark.svg" id="image1153" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />比较源<img alt="BlankMark.svg" id="image1154" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />OF</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">条件值A:</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　处理语句 B；</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">条件值C, 条件值D:</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　处理语句 E;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">条件值F..条件值G:</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　处理语句 H;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　<span>・</span></p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　<span>・</span></p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">ELSE</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　处理语句 I;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">END_CASE;</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_"> </p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">当比较源和条件值 A 相等时，</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">执行处理语句 B。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">比较源等于条件值C或条件值D时，</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">执行处理语句E。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">比较源大于等于条件值F、小于条件值G时，</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">执行处理语句H。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_"> </p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_"> </p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">比较源不满足任何条件时，</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">执行处理语句I。</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p dir="ltr" class="FM_08_00_Asterisk">* :<span style="padding-left: 1pt;" class="FMAutoNumber_1" /><img alt="BlankMark.svg" id="image1155" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />表示插入半角空格。</p>
+            <p dir="ltr" class="FM_01_05_HL5"><span class="FM_C00_DotDash">▌</span>循环控制语句</p>
+            <p dir="ltr" class="FM_02_01_Body">循环控制语句在指定条件下重复执行。</p>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T07_NomalTable_WidthFit_TH1" style="max-width: 100% ;height: auto">
+                <tr class="tr4">
+                  <td class="td51">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">控制语句</p>
+                  </td>
+                  <td class="td205" colspan="2">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">控制内容</p>
+                  </td>
+                </tr>
+                <tr class="tr4">
+                  <td class="td51" rowspan="2">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">FOR 语句</p>
+                  </td>
+                  <td class="td205" colspan="2">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">循环控制语句循环处理，直到指定次数的条件式成立为止</p>
+                  </td>
+                </tr>
+                <tr class="tr206">
+                  <td class="td159">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">FOR<img alt="BlankMark.svg" id="image1156" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />变量 := 初始值<img alt="BlankMark.svg" id="image1157" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />TO<img alt="BlankMark.svg" id="image1158" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />最终值<img alt="BlankMark.svg" id="image1159" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />BY<img alt="BlankMark.svg" id="image1160" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />增量值<img alt="BlankMark.svg" id="image1161" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />DO</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　处理语句 ;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">END_FOR;</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">在逐步递增变量值的同时循环执行处理语句。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">当变量值超过（或低于）最终值时，结束循环。</p>
+                  </td>
+                </tr>
+                <tr class="tr4">
+                  <td class="td51" rowspan="2">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">WHILE 语句</p>
+                  </td>
+                  <td class="td205" colspan="2">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">在条件式成立（真）时，循环处理的不定次数循环控制语句</p>
+                  </td>
+                </tr>
+                <tr class="tr206">
+                  <td class="td159">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">WHILE<img alt="BlankMark.svg" id="image1162" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />条件式<img alt="BlankMark.svg" id="image1163" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />DO</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　处理语句 ;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">END_WHILE;</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">条件式成立时</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">循环执行处理语句</p>
+                  </td>
+                </tr>
+                <tr class="tr4">
+                  <td class="td51" rowspan="2">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">REPEAT语句</p>
+                  </td>
+                  <td class="td205" colspan="2">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">在条件式成立（变为真）之前，循环处理的不定次数循环控制语句</p>
+                  </td>
+                </tr>
+                <tr class="tr210">
+                  <td class="td159">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">REPEAT</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　处理语句 ;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　UNTIL<img alt="BlankMark.svg" id="image1164" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />条件式</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">END_REPEAT;</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">条件式不成立时</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">循环执行处理语句</p>
+                  </td>
+                </tr>
+                <tr class="tr4">
+                  <td class="td51" rowspan="2">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">EXIT 语句</p>
+                  </td>
+                  <td class="td205" colspan="2">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">在循环控制语句中，与循环条件无关，从循环控制中退出</p>
+                  </td>
+                </tr>
+                <tr class="tr154">
+                  <td class="td159">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">&lt;循环处理语句&gt;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　·</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　·</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">EXIT;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　·</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　·</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">&lt;循环处理语句&gt;</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">执行 EXIT 后</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">不论条件如何，结束包含 EXIT 的循环控制</p>
+                  </td>
+                </tr>
+                <tr class="tr4">
+                  <td class="td51" rowspan="2">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">CONTINUE语句</p>
+                  </td>
+                  <td class="td205" colspan="2">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">在循环控制语句中，跳过循环进入下一个循环的执行中</p>
+                  </td>
+                </tr>
+                <tr class="tr154">
+                  <td class="td159">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">&lt;循环处理语句&gt;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　·</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　·</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">CONTINUE;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　·</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　·</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">&lt;循环处理语句&gt;</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">执行CONTINUE时，无论条件如何，都会返回到含有CONTINUE的循环控制语句的开头，开始下一个循环。</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p dir="ltr" class="FM_08_00_Asterisk">* :<span style="padding-left: 1pt;" class="FMAutoNumber_1" /><img alt="BlankMark.svg" id="image1165" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />表示插入半角空格。</p>
+            <p dir="ltr" class="FM_01_05_HL5"><span class="FM_C00_DotDash">▌</span>程序执行结束语句</p>
+            <p dir="ltr" class="FM_02_01_Body">结束已编写的程序的执行。</p>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T07_NomalTable_WidthFit_TH1" style="max-width: 100% ;height: auto">
+                <tr class="tr4">
+                  <td class="td51">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">控制语句</p>
+                  </td>
+                  <td class="td205" colspan="2">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">控制内容</p>
+                  </td>
+                </tr>
+                <tr class="tr4">
+                  <td class="td51" rowspan="2">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">RETURN语句</p>
+                  </td>
+                  <td class="td205" colspan="2">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">结束已编写的程序执行的控制语句</p>
+                  </td>
+                </tr>
+                <tr class="tr30">
+                  <td class="td159">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">处理语句;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">RETURN;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">处理语句;</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">结束已编写的程序（模块、功能块、功能）的执行。</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p dir="ltr" class="FM_01_03_HL3" id="TOC_IF_语句_条件分支_1"><a id="CSH_456"></a><a id="CSH_457"></a><a id="CSH_458"></a><a id="XREF_54234_IF_1"></a>IF ～ 语句(条件分支 1)</p>
+            <p dir="ltr" class="FM_02_01_Body">IF 语句是根据 1 个条件式判断是否进行处理的、最简单的条件分支语句。</p>
+            <p dir="ltr" class="FM_01_05_HL5"><span class="FM_C00_DotDash">▌</span>IF ～ THEN ～ END_IF</p>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T07_NomalTable_WidthFit_TH1" style="max-width: 100% ;height: auto">
+                <tr class="tr4">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">控制语句</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">格式说明</p>
+                  </td>
+                </tr>
+                <tr class="tr206">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">IF<img alt="BlankMark.svg" id="image1166" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />&lt;条件式&gt;<img alt="BlankMark.svg" id="image1167" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />THEN</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　&lt;处理语句1&gt;;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">END_IF;</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">如果条件式成立，</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">则执行处理语句 1。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">IF 语句结束</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p dir="ltr" class="FM_08_00_Asterisk">* :<span style="padding-left: 1pt;" class="FMAutoNumber_1" /><img alt="BlankMark.svg" id="image1168" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />表示插入半角空格。</p>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T07_NomalTable_WidthFit_TH1" style="max-width: 100% ;height: auto">
+                <tr class="tr4">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">格式举例</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">说明</p>
+                  </td>
+                </tr>
+                <tr class="tr206">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">IF<img alt="BlankMark.svg" id="image1169" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />bFlag = TRUE<img alt="BlankMark.svg" id="image1170" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />THEN</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　uiValue := uiValue + 1;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">END_IF;</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">如果 bFlag 为 ON</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">uiValue 加上常数 1。</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T03_PointImportant" style="max-width: 100% ;height: auto">
+                <tr class="tr10">
+                  <td class="td8">
+                    <p dir="ltr" class="FM_06_02_SymbolAnchor_POINT_"> <br><img src="image/Point.svg" style=" width:48.2pt; height:15.6pt;" class="RefImage" alt="Point.svg" /></p>
+                  </td>
+                  <td class="td9">
+                    <p dir="ltr" class="FM_06_04_SafetyDotBody"><span class="FM_C00_DotDash">•<span style="padding-left: 3pt;" class="FMAutoNumber_1"></span></span>如果条件式的结果为比特型（返回布尔值）运算式，则可以在任何运算式中使用。</p>
+                    <p dir="ltr" class="FM_06_04_SafetyDotBody"><span class="FM_C00_DotDash">•<span style="padding-left: 3pt;" class="FMAutoNumber_1"></span></span>处理语句是在 THEN～END_IF 之间编程的一系列的处理，可根据需要在多行间编程。</p>
+                    <p dir="ltr" class="FM_06_04_SafetyDotBody"><span class="FM_C00_DotDash">•<span style="padding-left: 3pt;" class="FMAutoNumber_1"></span></span>IF 语句可以嵌套，因此通过在处理语句中再编程 IF 语句，可通过 AND（与）条件过滤的同时执行多重分支处理。</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p dir="ltr" class="FM_01_05_HL5"><span class="FM_C00_DotDash">▌</span>处理流程</p>
+            <p dir="ltr" class="FM_04_01_ImageIllust_Left_">
+              <img alt="ControlStatements_Flow_IF-Statement_1.svg" id="image1171" src="image/ControlStatements_Flow_IF-Statement_1.svg" style="max-width: 100% ;height: auto" /> </p>
+            <p dir="ltr" class="FM_02_05_NumList1"><span class="FM_C04_Bold">(1)</span>通过条件式判断是“TRUE”还是“FALSE”。</p>
+            <p dir="ltr" class="FM_02_06_NumList_"><span class="FM_C04_Bold">(2)</span>如果条件式为“TRUE”，则执行 THEN 以下的处理语句 1，并跳到 END_IF 。</p>
+            <p dir="ltr" class="FM_02_06_NumList_"><span class="FM_C04_Bold">(3)</span>如果条件式为“FALSE”，则跳到END_IF，不执行任何操作，并跳转到  END_IF 以后的处理。</p>
+            <p dir="ltr" class="FM_01_03_HL3" id="TOC_IF_ELSE_语句_条件分支_2"><a id="CSH_459"></a>IF ～ ELSE 语句(条件分支 2)</p>
+            <p dir="ltr" class="FM_02_01_Body">该语句是指通过 1 个条件式可分成 2 种处理方法的简单的条件分支语句。</p>
+            <p dir="ltr" class="FM_01_05_HL5"><span class="FM_C00_DotDash">▌</span>IF ～ THEN ～ ELSE ～ END_IF</p>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T07_NomalTable_WidthFit_TH1" style="max-width: 100% ;height: auto">
+                <tr class="tr4">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">控制语句</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">格式说明</p>
+                  </td>
+                </tr>
+                <tr class="tr207">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">IF<img alt="BlankMark.svg" id="image1172" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />＜条件式＞<img alt="BlankMark.svg" id="image1173" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />THEN</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　＜处理语句1＞;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">ELSE</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　＜处理语句2＞;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">END_IF;</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">如果条件式成立，</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">则执行处理语句 1。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">如果条件式不成立，</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">则执行处理语句 2。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">IF 语句结束</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p dir="ltr" class="FM_08_00_Asterisk">* :<span style="padding-left: 1pt;" class="FMAutoNumber_1" /><img alt="BlankMark.svg" id="image1174" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />表示插入半角空格。</p>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T07_NomalTable_WidthFit_TH1" style="max-width: 100% ;height: auto">
+                <tr class="tr4">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">格式举例</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">说明</p>
+                  </td>
+                </tr>
+                <tr class="tr207">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">IF<img alt="BlankMark.svg" id="image1175" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />bFlag<img alt="BlankMark.svg" id="image1176" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />THEN</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　uiValue := 50;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">ELSE</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　uiValue := 10;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">END_IF;</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">如果 bFlag 为 ON，</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">则常数 50 存储到 uValue。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">如果 bFlag 为 OFF，</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">则常数 10 存储到 uValue。</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p dir="ltr" class="FM_01_05_HL5"><span class="FM_C00_DotDash">▌</span>处理流程</p>
+            <p dir="ltr" class="FM_04_01_ImageIllust_Left_">
+              <img alt="ControlStatements_Flow_IF-Statement_2.svg" id="image1177" src="image/ControlStatements_Flow_IF-Statement_2.svg" style="max-width: 100% ;height: auto" /> </p>
+            <p dir="ltr" class="FM_02_05_NumList1"><span class="FM_C04_Bold">(1)</span>通过条件式判断是“TRUE”还是“FALSE”。</p>
+            <p dir="ltr" class="FM_02_06_NumList_"><span class="FM_C04_Bold">(2)</span>如果条件式为“TRUE”，则执行 THEN 以下的处理语句 1，并跳到 END_IF （中间的运算式不执行）。</p>
+            <p dir="ltr" class="FM_02_06_NumList_"><span class="FM_C04_Bold">(3)</span>如果条件式为“FALSE”，则不执行 THEN~ELSE 间的程序，而执行 ELSE 以下的处理语句2。</p>
+            <p dir="ltr" class="FM_01_03_HL3" id="TOC_IF_ELSIF_语句_条件分支_3"><a id="CSH_460"></a>IF ～ ELSIF ～ 语句(条件分支 3)</p>
+            <p dir="ltr" class="FM_02_01_Body">如果不满足最初的条件式，则按照下一条件式重新进行判定。该条件分支语句可以具有多个条件。</p>
+            <p dir="ltr" class="FM_01_05_HL5"><span class="FM_C00_DotDash">▌</span>IF ～ THEN ～ ELSIF ～ END_IF</p>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T07_NomalTable_WidthFit_TH1" style="max-width: 100% ;height: auto">
+                <tr class="tr4">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">控制语句</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">格式说明</p>
+                  </td>
+                </tr>
+                <tr class="tr211">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">IF<span><img alt="BlankMark.svg" id="image1178" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>＜条件式1＞<span><img alt="BlankMark.svg" id="image1179" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>THEN</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_"> ＜处理语句1＞;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">ELSIF<span><img alt="BlankMark.svg" id="image1180" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>＜条件式2＞<span><img alt="BlankMark.svg" id="image1181" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>THEN</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_"> ＜处理语句2＞;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">ELSIF<span><img alt="BlankMark.svg" id="image1182" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>＜条件式3＞<span><img alt="BlankMark.svg" id="image1183" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>THEN</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_"> …</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">ELSE</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_"> ＜处理语句n＞;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">END_IF;</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">如果条件式 1 成立，</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">则执行处理语句 1。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">如果条件式 1 成立，条件式 2 不成立，</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">则执行处理语句 2。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">如果条件式 1，2 不成立，条件式 3 成立，<sup><span class="FM_C06_Superscript">*</span></sup><sup><span class="FM_C06_Superscript">1</span></sup></p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">…</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">如果所有的条件式都不成立</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">则执行处理语句 n。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">IF 语句至此结束。</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p dir="ltr" class="FM_08_00_Asterisk">* :<span style="padding-left: 1pt;" class="FMAutoNumber_1" /><img alt="BlankMark.svg" id="image1184" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />表示插入半角空格。</p>
+            <p dir="ltr" class="FM_08_01_Astarsk1">*1:<span style="padding-left: 1pt;" class="FMAutoNumber_1" />可以设定任意数量的条件式和处理语句。没有上限。</p>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T07_NomalTable_WidthFit_TH1" style="max-width: 100% ;height: auto">
+                <tr class="tr4">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">格式举例</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">说明</p>
+                  </td>
+                </tr>
+                <tr class="tr212">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">IF<span><img alt="BlankMark.svg" id="image1185" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>bFlag<span><img alt="BlankMark.svg" id="image1186" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>THEN</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　uiValue := 1000;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">ELSIF<span><img alt="BlankMark.svg" id="image1187" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>bFlag1<span><img alt="BlankMark.svg" id="image1188" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>THEN</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　uiValue := 1001;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">ELSIF<span><img alt="BlankMark.svg" id="image1189" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>bFlag2<span><img alt="BlankMark.svg" id="image1190" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>THEN</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　uiValue := 1002;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">ELSIF<span><img alt="BlankMark.svg" id="image1191" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>bFlag3<span><img alt="BlankMark.svg" id="image1192" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>THEN</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　uiValue := 1003;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">ELSIF<span><img alt="BlankMark.svg" id="image1193" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>bFlag4<span><img alt="BlankMark.svg" id="image1194" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>THEN</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　uiValue := 1004;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">ELSE</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　uiValue := 1005;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">END_IF;</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">如果 bFlag 为 ON（bFlag =ON 的省略记法）</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">则 1000 存储在 uValue 中。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">如果 bFlag 不为 ON，bFlag 1 为 ON，</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">则 1001 存储在 uValue中。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">如果 bFlag、bFlag1 不为 ON，bFlag 2 为 ON，</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">则 1002 存储在 uValue中。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">如果 bFlag、bFlag1、bFlag2 不为 ON，bFlag 3 为 ON，</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">则 1003 存储在 uValue中。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">如果 bFlag、bFlag1、bFlag2、bFlag3 不为 ON，bFlag 4 为 ON，</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">则 1004 存储在 uValue中。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">如果 bFlag 均不为 ON，</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">则 1005 存储在 uValue中。</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T03_PointImportant" style="max-width: 100% ;height: auto">
+                <tr class="tr12">
+                  <td class="td8">
+                    <p dir="ltr" class="FM_06_02_SymbolAnchor_POINT_"> <br><img src="image/Point.svg" style=" width:48.2pt; height:15.6pt;" class="RefImage" alt="Point.svg" /></p>
+                  </td>
+                  <td class="td9">
+                    <p dir="ltr" class="FM_06_04_SafetyDotBody"><span class="FM_C00_DotDash">•<span style="padding-left: 3pt;" class="FMAutoNumber_1"></span></span>如果条件式的结果为比特型（返回布尔值）运算式，则可以在任何运算式中使用。</p>
+                    <p dir="ltr" class="FM_06_04_SafetyDotBody"><span class="FM_C00_DotDash">•<span style="padding-left: 3pt;" class="FMAutoNumber_1"></span></span>处理语句是在控制语句之间编程的一系列的处理，可根据需要在多行间编程。</p>
+                    <p dir="ltr" class="FM_06_04_SafetyDotBody"><span class="FM_C00_DotDash">•<span style="padding-left: 3pt;" class="FMAutoNumber_1"></span></span>ELSE IF语句与 IF 语句不同，可编程多行，但不是嵌套结构。</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p dir="ltr" class="FM_01_05_HL5"><span class="FM_C00_DotDash">▌</span>处理流程</p>
+            <p dir="ltr" class="FM_04_01_ImageIllust_Left_">
+              <img alt="ControlStatements_Flow_IF-Statement_3.svg" id="image1195" src="image/ControlStatements_Flow_IF-Statement_3.svg" style="max-width: 100% ;height: auto" /> </p>
+            <p dir="ltr" class="FM_02_05_NumList1"><span class="FM_C04_Bold">(1)</span>通过条件式 1 判断是“TRUE”还是“FALSE”。</p>
+            <p dir="ltr" class="FM_02_06_NumList_"><span class="FM_C04_Bold">(2)</span>如果条件式 1 为“TRUE”，则执行 THEN 以下的处理语句 1，并跳到 END_IF（中间的运算式不执行）。</p>
+            <p dir="ltr" class="FM_02_06_NumList_"><span class="FM_C04_Bold">(3)</span>如果条件式为“FALSE”，则以条件式 2 判断“TRUE”或“FALSE”。</p>
+            <p dir="ltr" class="FM_02_06_NumList_"><span class="FM_C04_Bold">(4)</span>如果条件式 2 为“TRUE”，则执行处理语句 2，并跳到 END_IF（中间的运算式不执行）。</p>
+            <p dir="ltr" class="FM_02_06_NumList_"><span class="FM_C04_Bold">(5)</span>如果条件式 2 为“FALSE”，则以条件式 3 判断“TRUE”或“FALSE”。</p>
+            <p dir="ltr" class="FM_02_06_NumList_"><span class="FM_C04_Bold">(6)</span>如果条件式 3 为“TRUE”，则执行处理语句 3，并跳到 END_IF（中间的运算式不执行）。</p>
+            <p dir="ltr" class="FM_02_06_NumList_"><span class="FM_C04_Bold">(7)</span>如果条件式 3 为“FALSE”，则以条件式 4 判断“TRUE”或“FALSE”。依次类推。</p>
+            <p dir="ltr" class="FM_01_03_HL3" id="TOC_CASE_语句_多分支控制"><a id="HT_ControlStatementsCASE"></a><a id="CSH_461"></a><a id="CSH_462"></a><a id="CSH_463"></a>CASE ～ 语句(多分支控制)</p>
+            <p dir="ltr" class="FM_01_05_HL5"><span class="FM_C00_DotDash">▌</span>CASE</p>
+            <p dir="ltr" class="FM_02_01_Body">该条件分支语句可根据存储在参考字数据中的值，选择处理。</p>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T07_NomalTable_WidthFit_TH1" style="max-width: 100% ;height: auto">
+                <tr class="tr4">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">控制语句</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">格式说明</p>
+                  </td>
+                </tr>
+                <tr class="tr213">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">CASE<span><img alt="BlankMark.svg" id="image1196" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>&lt;字数据&gt;<span><img alt="BlankMark.svg" id="image1197" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>OF</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　&lt;定数1&gt; : 处理语句1;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　&lt;定数2&gt; : 处理语句2;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　&lt;定数3&gt;,&lt;定数4&gt; : 处理语句3;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　&lt;定数5&gt;..&lt;定数6&gt; : 处理语句4;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">ELSE</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　&lt;处理语句n&gt;;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">END_CASE;</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">基于字数据值的条件分支</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">如果常数 1 和字数据的值相等，则执行处理语句 1。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">如果常数 2 和字数据的值相等，则执行处理语句 2。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">字数据与常数3或常数4相等时，执行处理语句3。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">常数5≤字数据≤常数6时，执行处理语句4。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">常数和字数据的值是上述以外情况时，</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">执行处理语句n。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">CASE 语句结束。</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p dir="ltr" class="FM_08_00_Asterisk">* :<span style="padding-left: 1pt;" class="FMAutoNumber_1" /><img alt="BlankMark.svg" id="image1198" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />表示插入半角空格。</p>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T07_NomalTable_WidthFit_TH1" style="max-width: 100% ;height: auto">
+                <tr class="tr4">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">格式举例</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">说明</p>
+                  </td>
+                </tr>
+                <tr class="tr213">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">CASE<span><img alt="BlankMark.svg" id="image1199" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>uiCount<span><img alt="BlankMark.svg" id="image1200" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>OF</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　1 : uiValue := 1000;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　2..10 : uiValue := 2000;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　11,15,60 : uiValue := 3000;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　101..65535 : uiValue := 4000;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">ELSE</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　uiValue := 5000;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">END_CASE;</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">以 uiCount 存储的值为基准。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">如果 uiCount = 1，则 1000 存储在 uiValue 中。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">如果 uiCount = 2～10，则 2000 存储在 uiValue 中。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">如果 uiCount = 11 或 15 或 60，则 3000 存储在 uiValue 中。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">如果uiCount的值为101以上时，则4000存储在 uiValue 中。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_"> </p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">如果 uiCount 的值为上述以外的值，则 5000 存储在 uiValue 中。</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p dir="ltr" class="FM_01_05_HL5"><span class="FM_C00_DotDash">▌</span>处理流程</p>
+            <p dir="ltr" class="FM_04_01_ImageIllust_Left_">
+              <img alt="ControlStatements_Flow_CASE-Statement.svg" id="image1201" src="image/ControlStatements_Flow_CASE-Statement.svg" style="max-width: 100% ;height: auto" /> </p>
+            <p dir="ltr" class="FM_02_05_NumList1"><span class="FM_C04_Bold">(1)</span>声明作为以后条件值的判断基准的值。</p>
+            <p dir="ltr" class="FM_02_06_NumList_"><span class="FM_C04_Bold">(2)</span>比较比较源和条件值 1，如果“比较源 = 条件值 1”成立，则执行处理语句 1。执行处理语句 1 后，跳到 END_CASE。</p>
+            <p dir="ltr" class="FM_02_06_NumList_"><span class="FM_C04_Bold">(3)</span>如果“比较源 = 条件值 1”不成立，则跳至下一条件值比较。</p>
+            <p dir="ltr" class="FM_02_06_NumList_"><span class="FM_C04_Bold">(4)</span>比较比较源和条件值 2，如果“比较源 = 条件值 2”成立，则执行处理语句 2。执行处理语句 2 后，跳到 END_CASE。</p>
+            <p dir="ltr" class="FM_02_06_NumList_"><span class="FM_C04_Bold">(5)</span>如果“比较源 = 条件值 2”不成立，则转到下一个条件值比较。</p>
+            <p dir="ltr" class="FM_02_06_NumList_"><span class="FM_C04_Bold">(6)</span>比较比较源和条件值 3，如果“比较源 = 条件值 3”成立，则执行处理语句 3。执行处理语句 3 后，跳到 END_CASE。</p>
+            <p dir="ltr" class="FM_02_06_NumList_"><span class="FM_C04_Bold">(7)</span>如果““比较源 = 条件值 3”不成立，则执行处理语句 4。</p>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T03_PointImportant" style="max-width: 100% ;height: auto">
+                <tr class="tr111">
+                  <td class="td8">
+                    <p dir="ltr" class="FM_06_02_SymbolAnchor_POINT_"> <br><img src="image/Point.svg" style=" width:48.2pt; height:15.6pt;" class="RefImage" alt="Point.svg" /></p>
+                  </td>
+                  <td class="td9">
+                    <p dir="ltr" class="FM_06_04_SafetyDotBody"><span class="FM_C00_DotDash">•<span style="padding-left: 3pt;" class="FMAutoNumber_1"></span></span>选择的常数可以是单一常数，或包括多项指定和范围指定的常数。</p>
+                    <p dir="ltr" class="FM_06_05_SafetyIndentBody">指定例）</p>
+                    <p dir="ltr" class="FM_06_05_SafetyIndentBody">1 : 单一指定（ 仅限 1）</p>
+                    <p dir="ltr" class="FM_06_05_SafetyIndentBody">3, 9, 12, 50 : 多个指定（ 3 或9 或12 或 50 ）</p>
+                    <p dir="ltr" class="FM_06_05_SafetyIndentBody">8..20 :范围指定（8 以上、20 以下的范围内）</p>
+                    <p dir="ltr" class="FM_06_04_SafetyDotBody"><span class="FM_C00_DotDash">•<span style="padding-left: 3pt;" class="FMAutoNumber_1"></span></span>ELSE&lt;处理语句&gt;的编程可以省略。</p>
+                    <p dir="ltr" class="FM_06_05_SafetyIndentBody">但“如果 CASE 条件全不成立”的 CASE ELSE 可帮助解决发生意外事件的问题。</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p dir="ltr" class="FM_01_03_HL3" id="TOC_FOR_END_FOR_语句_指定次数的循环控制"><a id="HT_ControlStatementsFOR"></a><a id="CSH_464"></a><a id="CSH_465"></a><a id="CSH_466"></a><a id="CSH_467"></a>FOR ～ END_FOR 语句（指定次数的循环控制）</p>
+            <p dir="ltr" class="FM_01_05_HL5"><span class="FM_C00_DotDash">▌</span>FOR～END_FOR</p>
+            <p dir="ltr" class="FM_02_01_Body">根据循环条件，决定处理语句执行次数的控制语句。</p>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T07_NomalTable_WidthFit_TH1" style="max-width: 100% ;height: auto">
+                <tr class="tr4">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">控制语句</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">格式说明</p>
+                  </td>
+                </tr>
+                <tr class="tr36">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">FOR<span><img alt="BlankMark.svg" id="image1202" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>&lt;变量&gt; := &lt;初始值&gt;<span><img alt="BlankMark.svg" id="image1203" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>TO<span><img alt="BlankMark.svg" id="image1204" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>&lt;最终值&gt;[<span><img alt="BlankMark.svg" id="image1205" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>BY<span><img alt="BlankMark.svg" id="image1206" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>&lt;增量值&gt;]<span> </span><span><img alt="BlankMark.svg" id="image1207" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>DO</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">&lt;处理语句&gt;;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">END_FOR;</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">1．在＜变量＞中存储＜默认值＞。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">2．满足以下条件时，执行＜处理语句＞。不满足时，FOR语句结束。</p>
+                    <p dir="ltr" class="FM_05_06_TableIndentBody">·＜增量值＞ &gt; 0时，＜变量＞≤＜最终值＞</p>
+                    <p dir="ltr" class="FM_05_06_TableIndentBody">·＜增量值＞ &lt; 0时，＜变量＞≥＜最终值＞</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">3．＜变量＞加上＜增量值＞后返回2。</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p dir="ltr" class="FM_08_01_Astarsk1">*1:<span style="padding-left: 1pt;" class="FMAutoNumber_1" />[　]内的编程可以省略。如果省略，则作为 BY<img alt="BlankMark.svg" id="image1208" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />1 执行。<br><img alt="BlankMark.svg" id="image1209" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />表示插入半角空格。</p>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T07_NomalTable_WidthFit_TH1" style="max-width: 100% ;height: auto">
+                <tr class="tr4">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">格式举例</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">说明</p>
+                  </td>
+                </tr>
+                <tr class="tr214">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">FOR<span><img alt="BlankMark.svg" id="image1210" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>uiIdx := 0<span><img alt="BlankMark.svg" id="image1211" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>TO<span><img alt="BlankMark.svg" id="image1212" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>99<span><img alt="BlankMark.svg" id="image1213" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>BY<span><img alt="BlankMark.svg" id="image1214" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>5<span><img alt="BlankMark.svg" id="image1215" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>DO</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　uiValue := uiValue + 5;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">END_FOR;</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">uiIdx 的值从 0 到超过 99，循环。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">将 uiValue 加上 5 的结果存储到 uiValue。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">在 uiIdx 的当前值加上增量值 5，返回 FOR~。</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p dir="ltr" class="FM_01_05_HL5"><span class="FM_C00_DotDash">▌</span>处理流程</p>
+            <p dir="ltr" class="FM_04_01_ImageIllust_Left_">
+              <img alt="ControlStatements_Flow_FOR-END_FOR-Statement.svg" id="image1216" src="image/ControlStatements_Flow_FOR-END_FOR-Statement.svg" style="max-width: 100% ;height: auto" /> </p>
+            <p dir="ltr" class="FM_02_05_NumList1"><span class="FM_C04_Bold">(1)</span>为变量赋值初始值。</p>
+            <p dir="ltr" class="FM_02_06_NumList_"><span class="FM_C04_Bold">(2)</span>设置表示循环处理结束的最终值。另外，设置加在变量值上的增量值。</p>
+            <p dir="ltr" class="FM_02_06_NumList_"><span class="FM_C04_Bold">(3)</span>判定变量值是否小于最终值。</p>
+            <p dir="ltr" class="FM_02_06_NumList_"><span class="FM_C04_Bold">(4)</span>如果 (3) 的条件为“TRUE”，则执行处理语句。</p>
+            <p dir="ltr" class="FM_02_06_NumList_"><span class="FM_C04_Bold">(5)</span>“FALSE”，则结束循环处理语句。</p>
+            <p dir="ltr" class="FM_02_06_NumList_"><span class="FM_C04_Bold">(6)</span>将变量值加上增量值，返回 (3)。</p>
+            <p dir="ltr" class="FM_01_03_HL3" id="TOC_WHILE_语句_前判定循环控制"><a id="CSH_468"></a><a id="CSH_469"></a><a id="XREF_17701_WHILE"></a>WHILE 语句（前判定循环控制）</p>
+            <p dir="ltr" class="FM_01_05_HL5"><span class="FM_C00_DotDash">▌</span>WHILE～END_WHILE</p>
+            <p dir="ltr" class="FM_02_01_Body">循环条件为“TRUE”期间，执行循环处理语句的控制语句。</p>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T07_NomalTable_WidthFit_TH1" style="max-width: 100% ;height: auto">
+                <tr class="tr4">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">控制语句</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">格式说明</p>
+                  </td>
+                </tr>
+                <tr class="tr191">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">WHILE<span><img alt="BlankMark.svg" id="image1217" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>&lt;条件式&gt;<span><img alt="BlankMark.svg" id="image1218" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>DO</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　&lt;处理语句&gt;;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">END_WHILE;</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">条件式成立时、<sup><span class="FM_C06_Superscript">*1</span></sup></p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">执行处理语句。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">返回句首（WHILE）。;</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p dir="ltr" class="FM_08_00_Asterisk">* :<span style="padding-left: 1pt;" class="FMAutoNumber_1" /><img alt="BlankMark.svg" id="image1219" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />表示插入半角空格。</p>
+            <p dir="ltr" class="FM_08_01_Astarsk1">*1:<span style="padding-left: 1pt;" class="FMAutoNumber_1" />如果条件式不成立，则结束循环处理。</p>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T07_NomalTable_WidthFit_TH1" style="max-width: 100% ;height: auto">
+                <tr class="tr4">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">格式举例</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">说明</p>
+                  </td>
+                </tr>
+                <tr class="tr214">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">WHILE<span><img alt="BlankMark.svg" id="image1220" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>uiValue &lt; 100<span><img alt="BlankMark.svg" id="image1221" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>DO</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　uiValue := uiValue + 5;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">END_WHILE;</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">如果 uiValue 的值不足 100，</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">则在 uiValue 加 5。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">返回句首(WHILE)。</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p dir="ltr" class="FM_08_02_Astarsk_">*2:<span style="padding-left: 1pt;" class="FMAutoNumber_1" />如果 uiValue 的值为 100 以上，则不执行处理语句，从 END WHILE 的下一行起执行。</p>
+            <p dir="ltr" class="FM_01_05_HL5"><span class="FM_C00_DotDash">▌</span>处理流程</p>
+            <p dir="ltr" class="FM_04_01_ImageIllust_Left_">
+              <img alt="ControlStatements_Flow_WHILE-Statement.svg" id="image1222" src="image/ControlStatements_Flow_WHILE-Statement.svg" style="max-width: 100% ;height: auto" /> </p>
+            <p dir="ltr" class="FM_02_05_NumList1"><span class="FM_C04_Bold">(1)</span>以 WHILE 执行条件判定“TRUE”或“FALSE”，决定 WHILE~END_WHILE 间的处理方法。</p>
+            <p dir="ltr" class="FM_02_06_NumList_"><span class="FM_C04_Bold">(2)</span>如果执行条件为“TRUE”，则执行处理语句，返回 (1)（WHILE 语句的句首）。</p>
+            <p dir="ltr" class="FM_02_06_NumList_"><span class="FM_C04_Bold">(3)</span>如果执行条件为“FALSE”，则 END_WHILE 语句进到下一步。</p>
+            <p dir="ltr" class="FM_01_03_HL3" id="TOC_REPEAT_语句_后判定循环控制"><a id="CSH_470"></a><a id="CSH_471"></a>REPEAT 语句（后判定循环控制）</p>
+            <p dir="ltr" class="FM_01_05_HL5"><span class="FM_C00_DotDash">▌</span>REPEAT～END_REPEAT</p>
+            <p dir="ltr" class="FM_02_01_Body">UNTIL 的条件为“FALSE”期间，执行循环处理语句的控制语句。</p>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T07_NomalTable_WidthFit_TH1" style="max-width: 100% ;height: auto">
+                <tr class="tr4">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">控制语句</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">格式说明</p>
+                  </td>
+                </tr>
+                <tr class="tr215">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">REPEAT</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　&lt;处理语句&gt;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　UNTIL<span><img alt="BlankMark.svg" id="image1223" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>&lt;条件式&gt;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">END_REPEAT;</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">进行循环控制。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">执行处理语句。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">如果条件式不成立，则返回句首（REPEAT）。<sup><span class="FM_C06_Superscript">*1</span></sup></p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p dir="ltr" class="FM_08_00_Asterisk">* :<span style="padding-left: 1pt;" class="FMAutoNumber_1" /><img alt="BlankMark.svg" id="image1224" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" />表示插入半角空格。</p>
+            <p dir="ltr" class="FM_08_01_Astarsk1">*1:<span style="padding-left: 1pt;" class="FMAutoNumber_1" />如果条件式成立，则结束循环处理。</p>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T07_NomalTable_WidthFit_TH1" style="max-width: 100% ;height: auto">
+                <tr class="tr4">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">格式举例</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">说明</p>
+                  </td>
+                </tr>
+                <tr class="tr215">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">REPEAT</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　uiValue := uiValue + 5;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　UNTIL<span><img alt="BlankMark.svg" id="image1225" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>uiValue &gt;= 100</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">END_REPEAT;</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">进行下一步开始的处理。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">在 uiValue 加 5。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">如果 uiValue 的值不在 100 以上，则返回句首（REPEAT）。<sup><span class="FM_C06_Superscript">*2</span></sup></p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p dir="ltr" class="FM_08_02_Astarsk_">*2:<span style="padding-left: 1pt;" class="FMAutoNumber_1" />如果 uiValue 的值为 100 以上，则不执行处理语句，从 END_REPEAT 的下一行起执行。</p>
+            <p dir="ltr" class="FM_01_05_HL5"><span class="FM_C00_DotDash">▌</span>处理流程</p>
+            <p dir="ltr" class="FM_04_01_ImageIllust_Left_">
+              <img alt="ControlStatements_Flow_REPEAT-Statement.svg" id="image1226" src="image/ControlStatements_Flow_REPEAT-Statement.svg" style="max-width: 100% ;height: auto" /> </p>
+            <p dir="ltr" class="FM_02_05_NumList1"><span class="FM_C04_Bold">(1)</span>执行处理语句。</p>
+            <p dir="ltr" class="FM_02_06_NumList_"><span class="FM_C04_Bold">(2)</span>判定 UNTIL 条件式是“TRUE”还是“FALSE”，并确认是否继续执行循环处理。</p>
+            <p dir="ltr" class="FM_02_06_NumList_"><span class="FM_C04_Bold">(3)</span>如果条件式为“FALSE”，则返回 (1)。</p>
+            <p dir="ltr" class="FM_02_06_NumList_"><span class="FM_C04_Bold">(4)</span>如果条件式为“TRUE”，则进入下一步。</p>
+            <p dir="ltr" class="FM_01_03_HL3" id="TOC_EXIT_处理"><a id="CSH_472"></a>EXIT 处理</p>
+            <p dir="ltr" class="FM_01_05_HL5"><span class="FM_C00_DotDash">▌</span>EXIT</p>
+            <p dir="ltr" class="FM_02_01_Body">使循环控制强制结束（从循环中退出）时使用。</p>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T07_NomalTable_WidthFit_TH1" style="max-width: 100% ;height: auto">
+                <tr class="tr4">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">控制语句</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">格式说明</p>
+                  </td>
+                </tr>
+                <tr class="tr191">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">&lt;循环控制语句开始&gt;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　EXIT;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">&lt;循环控制语句结束&gt;</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">在循环处理中编程。<sup><span class="FM_C06_Superscript">*1</span></sup></p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">强制结束该循环处理。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">循环控制语句结束。</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p dir="ltr" class="FM_08_01_Astarsk1">*1:<span style="padding-left: 1pt;" class="FMAutoNumber_1" />EXIT 必须在循环控制语句中编程。</p>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T07_NomalTable_WidthFit_TH1" style="max-width: 100% ;height: auto">
+                <tr class="tr4">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">格式举例</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">说明</p>
+                  </td>
+                </tr>
+                <tr class="tr216">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">FOR<span><img alt="BlankMark.svg" id="image1227" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>uiValue1 := 0<span><img alt="BlankMark.svg" id="image1228" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>TO<span><img alt="BlankMark.svg" id="image1229" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>50<span><img alt="BlankMark.svg" id="image1230" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>BY<span><img alt="BlankMark.svg" id="image1231" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>2 DO</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　uiValue2 := uiValue2 + 5;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　IF<span><img alt="BlankMark.svg" id="image1232" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>uiValue2 &gt; 70<span><img alt="BlankMark.svg" id="image1233" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>THEN</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　　　EXIT;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　END_IF;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">END_FOR;</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">uiValue1 从 0  到 50，循环。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">在 uiValue2 加 5。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">如果 uiValue2 的值超过 70，</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">使循环控制（FOR~END_FOR）强制结束。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">IF 语句结束。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">在 uiValue1 加 2，返回 FOR 语句的句首。</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p dir="ltr" class="FM_08_00_Asterisk">* :<span style="padding-left: 1pt;" class="FMAutoNumber_1" />EXIT 除 FOR 外，也可在 WHILE 语句、REPEAT 语句中使用。</p>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T03_PointImportant" style="max-width: 100% ;height: auto">
+                <tr class="tr32">
+                  <td class="td8">
+                    <p dir="ltr" class="FM_06_02_SymbolAnchor_POINT_"> <br><img src="image/Point.svg" style=" width:48.2pt; height:15.6pt;" class="RefImage" alt="Point.svg" /></p>
+                  </td>
+                  <td class="td9">
+                    <p dir="ltr" class="FM_06_03_SafetyBody">EXIT 必须写在循环处理的内侧。</p>
+                    <p dir="ltr" class="FM_06_03_SafetyBody">如果写在循环处理外，会出现变换错误。</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p dir="ltr" class="FM_01_03_HL3" id="TOC_CONTINUE_处理"><a id="CSH_473"></a>CONTINUE 处理</p>
+            <p dir="ltr" class="FM_01_05_HL5"><span class="FM_C00_DotDash">▌</span>CONTINUE</p>
+            <p dir="ltr" class="FM_02_01_Body">结束正在执行的循环处理，进入下一个循环时使用。</p>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T07_NomalTable_WidthFit_TH1" style="max-width: 100% ;height: auto">
+                <tr class="tr4">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">控制语句</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">格式说明</p>
+                  </td>
+                </tr>
+                <tr class="tr191">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">&lt;循环控制语句开始&gt;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　CONTINUE;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">&lt;循环控制语句结束&gt;</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">在循环处理中编程。<sup><span class="FM_C06_Superscript">*1</span></sup></p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">结束正在执行的循环处理，进入下一个循环处理。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">循环控制语句结束。</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p dir="ltr" class="FM_08_01_Astarsk1">*1:<span style="padding-left: 1pt;" class="FMAutoNumber_1" />CONTINUE 必须在循环控制语句中编程。</p>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T07_NomalTable_WidthFit_TH1" style="max-width: 100% ;height: auto">
+                <tr class="tr4">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">格式举例</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">说明</p>
+                  </td>
+                </tr>
+                <tr class="tr216">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">FOR<span><img alt="BlankMark.svg" id="image1234" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>uiValue1 := 0<span><img alt="BlankMark.svg" id="image1235" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>TO<span><img alt="BlankMark.svg" id="image1236" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>50<span><img alt="BlankMark.svg" id="image1237" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>BY<span><img alt="BlankMark.svg" id="image1238" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>2<span><img alt="BlankMark.svg" id="image1239" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>DO</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　uiValue2 := uiValue2 + 5;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　IF<span><img alt="BlankMark.svg" id="image1240" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>bFlag1<span><img alt="BlankMark.svg" id="image1241" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>THEN</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　　　CONTINUE;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　END_IF;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">END_FOR;</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">uiValue1 从 0  到 50，循环。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">在 uiValue2 加 5。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">如果bFlag是TRUE，则不会执行CONTINUE～END_IF;的处理，而是返回FOR语句的开头。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">IF 语句结束。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">在 uiValue1 加 2，返回 FOR 语句的句首。</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p dir="ltr" class="FM_08_00_Asterisk">* :<span style="padding-left: 1pt;" class="FMAutoNumber_1" />CONTINUE 除 FOR 外，也可在 WHILE 语句、REPEAT 语句中使用。</p>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T03_PointImportant" style="max-width: 100% ;height: auto">
+                <tr class="tr32">
+                  <td class="td8">
+                    <p dir="ltr" class="FM_06_02_SymbolAnchor_POINT_"> <br><img src="image/Point.svg" style=" width:48.2pt; height:15.6pt;" class="RefImage" alt="Point.svg" /></p>
+                  </td>
+                  <td class="td9">
+                    <p dir="ltr" class="FM_06_03_SafetyBody">CONTINUE 必须写在循环处理的内侧。</p>
+                    <p dir="ltr" class="FM_06_03_SafetyBody">如果写在循环处理外，会出现变换错误。</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p dir="ltr" class="FM_01_03_HL3" id="TOC_RETURN_处理"><a id="CSH_474"></a>RETURN 处理</p>
+            <p dir="ltr" class="FM_01_05_HL5"><span class="FM_C00_DotDash">▌</span>RETURN</p>
+            <p dir="ltr" class="FM_02_01_Body">RETURN为用于强制结束已编写程序（模块/宏/功能块/函数）的执行。</p>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T07_NomalTable_WidthFit_TH1" style="max-width: 100% ;height: auto">
+                <tr class="tr4">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">控制语句</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">格式说明</p>
+                  </td>
+                </tr>
+                <tr class="tr30">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">&lt;处理语句&gt;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">RETURN;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">&lt;处理语句&gt;</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_"> </p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">结束已编写程序的执行。</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div style="text-align:left">
+              <table dir="ltr" class="table6 T07_NomalTable_WidthFit_TH1" style="max-width: 100% ;height: auto">
+                <tr class="tr4">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">格式举例</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_02_TableHead_Center_">说明</p>
+                  </td>
+                </tr>
+                <tr class="tr216">
+                  <td class="td28">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">FOR<span><img alt="BlankMark.svg" id="image1242" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>uiValue1 := 0<span><img alt="BlankMark.svg" id="image1243" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>TO<span><img alt="BlankMark.svg" id="image1244" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>50<span><img alt="BlankMark.svg" id="image1245" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>BY<span><img alt="BlankMark.svg" id="image1246" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>2<span><img alt="BlankMark.svg" id="image1247" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>DO</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　uiValue2 := uiValue2 + 5;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　IF<span><img alt="BlankMark.svg" id="image1248" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>uiValue2 &gt; 70<span><img alt="BlankMark.svg" id="image1249" src="image/BlankMark.svg" style="max-width: 100% ;height: auto" /></span>THEN</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　　　RETURN;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">　　END_IF;</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">END_FOR;</p>
+                  </td>
+                  <td class="td175">
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">uiValue1 从 0  到 50，循环。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">在 uiValue2 加 5。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">如果 uiValue2 的值超过 70，跳至此程序的 END 指令位置，结束程式的执行。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">IF 语句结束。</p>
+                    <p dir="ltr" class="FM_05_03_TableBody_Left_">在 uiValue1 加 2，返回 FOR 语句的句首。</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p dir="ltr" class="FM_01_03_HL3" id="TOC_使用控制语句时的注意事项">使用控制语句时的注意事项</p>
+            <p dir="ltr" class="FM_01_04_HL4">循环控制语句和处理时间</p>
+            <p dir="ltr" class="FM_02_01_Body">使用FOR语句、WHILE语句、REPEAT语句执行循环处理时，如果1次扫描中的循环次数变多，那么扫描时间也会变长。</p>
+            <p dir="ltr" class="FM_02_01_Body">扫描时间超过300ms时，CPU单元会发生扫描超时，转为PROGRAM模式后停止动作。</p>
+            <p dir="ltr" class="FM_02_01_Body">因此，需要在一定程度上控制1次扫描中的循环次数，以免发生扫描超时。</p>
+            <p dir="ltr" class="FM_99_03_BlankLine"> </p>
+            <p dir="ltr" class="FM_02_01_Body">例如，执行20万次循环处理时，请不要在1次扫描中执行20万次循环处理，</p>
+            <p dir="ltr" class="FM_02_01_Body">而是按照　1000次循环处理/1次扫描×200次扫描　等方式，分成多次扫描执行循环处理。</p>
+            <p dir="ltr" class="FM_02_01_Body"> </p>
+          </div>
+        </div>
+        <div id="pageTransition" class="hidden">
+          <div id="page_prev" class="hidden"><a href="">&lt;&lt; back</a></div>
+          <div id="page_next" class="hidden"><a href="">next &gt;&gt;</a></div>
+        </div>
+      </div>
+    </div>
+    <!-- フッター -->
+    <footer>
+      <div>
+            Copyright © 2024 KEYENCE CORPORATION. All rights reserved.
+        </div>
+    </footer>
+  </body>
+</html>
